@@ -1,0 +1,8 @@
+{
+	"BuildId": "16433597",
+	"Modules": 
+	{
+		"APSLiveLink": "UnrealEditor-APSLiveLink.dll",
+		"APSLiveLinkEditor": "UnrealEditor-APSLiveLinkEditor.dll"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.APSLiveLink.cpp.obj": [
+			"AnimNode_APSLiveLinkNode.cpp.obj",
+			"APSClient.cpp.obj",
+			"APSLiveLink.cpp.obj",
+			"APSMocapServerSync.cpp.obj"
+		],
+		"Module.APSLiveLink.gen.cpp.obj": [
+			"AnimNode_APSLiveLinkNode.gen.cpp.obj",
+			"APSClient.gen.cpp.obj",
+			"APSLiveLink.init.gen.cpp.obj",
+			"APSMocapServerSync.gen.cpp.obj"
+		]
+	}
+}

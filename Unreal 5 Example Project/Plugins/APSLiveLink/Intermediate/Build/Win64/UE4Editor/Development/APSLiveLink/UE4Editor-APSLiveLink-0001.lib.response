@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-APSLiveLink-0001.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\github\RealtimeMocap\Intermediate\Build\Win64\RealtimeMocapEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\github\RealtimeMocap\Plugins\APSLiveLink\Intermediate\Build\Win64\UE4Editor\Development\APSLiveLink\Module.APSLiveLink.cpp.obj"
+"C:\github\RealtimeMocap\Plugins\APSLiveLink\Intermediate\Build\Win64\UE4Editor\Development\APSLiveLink\Module.APSLiveLink.gen.cpp.obj"
+"C:\github\RealtimeMocap\Plugins\APSLiveLink\Intermediate\Build\Win64\UE4Editor\Development\APSLiveLink\Default.rc2.res"
+/OUT:"C:\github\RealtimeMocap\Plugins\APSLiveLink\Intermediate\Build\Win64\UE4Editor\Development\APSLiveLink\UE4Editor-APSLiveLink-0001.lib"
+/INCLUDE:IMPLEMENT_MODULE_APSLiveLink

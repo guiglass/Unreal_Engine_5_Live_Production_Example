@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.APSLiveLinkEditor.cpp.obj": [
+			"AnimGraphNode_APSLiveLinkNode.cpp.obj",
+			"APSLiveLinkEditor.cpp.obj"
+		],
+		"Module.APSLiveLinkEditor.gen.cpp.obj": [
+			"AnimGraphNode_APSLiveLinkNode.gen.cpp.obj",
+			"APSLiveLinkEditor.init.gen.cpp.obj"
+		]
+	}
+}

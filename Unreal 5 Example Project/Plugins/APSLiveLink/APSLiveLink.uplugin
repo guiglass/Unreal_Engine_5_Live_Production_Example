@@ -1,0 +1,33 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "3.6.1",
+	"FriendlyName": "APS Live-Link SDK",
+	"Description": "APS SDK Realtime Avatar Client Plugin (beta)",
+	"Category": "Live Production Motion Capture",
+	"CreatedBy": "Animation Prep Studios",
+	"CreatedByURL": "https://www.patreon.com/prepstudio",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "APSLiveLink",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "PreDefault",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "APSLiveLinkEditor",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "PreDefault",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	]
+}

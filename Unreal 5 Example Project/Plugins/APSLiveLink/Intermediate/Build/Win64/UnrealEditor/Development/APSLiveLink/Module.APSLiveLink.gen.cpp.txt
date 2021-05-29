@@ -1,0 +1,101 @@
+C:\github\LiveProductionUE5\Plugins\APSLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\APSLiveLink\Definitions.APSLiveLink.h
+C:/github/LiveProductionUE5/Plugins/APSLiveLink/Intermediate/Build/Win64/UnrealEditor/Inc/APSLiveLink/AnimNode_APSLiveLinkNode.gen.cpp
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\github\LiveProductionUE5\Plugins\APSLiveLink\Source\APSLiveLink/Public/AnimNode_APSLiveLinkNode.h
+C:\github\LiveProductionUE5\Plugins\APSLiveLink\Source\APSLiveLink\Public\APSMocapServerSync.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\INCLUDE\queue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\INCLUDE\algorithm
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\INCLUDE\deque
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\INCLUDE\vector
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Networking.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Core.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\GenericPlatform/GenericPlatformNamedPipe.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\HAL/PlatformNamedPipe.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Windows/WindowsPlatformNamedPipe.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\GenericPlatform/GenericPlatformCriticalSection.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\HAL/PlatformIncludes.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/MessageDialog.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\ProfilingDebugging/ScopedDebugInfo.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\ProfilingDebugging/ExternalProfiler.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/StringUtility.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Serialization/NameAsStringProxyArchive.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Containers/MRUArray.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Containers/TransArray.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Containers/ArrayBuilder.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/SingleThreadEvent.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\HAL/ThreadManager.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Containers/StaticBitArray.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Containers/MapBuilder.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\HAL/ThreadingBase.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Internationalization/TextLocalizationManagerGlobals.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Internationalization/Culture.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Logging/LogSuppressionInterface.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\HAL/OutputDevices.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Logging/LogScopedVerbosityOverride.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceNull.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceMemory.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceFile.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceDebug.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceArchiveWrapper.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceAnsiError.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/TimeGuard.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Serialization/LargeMemoryWriter.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Serialization/LargeMemoryData.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Serialization/LargeMemoryReader.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Serialization/BufferArchive.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Serialization/ArrayReader.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Serialization/ArrayWriter.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Serialization/BufferWriter.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/WildcardString.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Containers/CircularQueue.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceHelper.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/ScopedSlowTask.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/CallbackDevice.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/LocalTimestampDirectoryVisitor.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/BlueprintsObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/BuildObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/CoreObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/EditorObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/FrameworkObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/MobileObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/NetworkingObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/OnlineObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/PhysicsObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/PlatformObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/SequencerObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\UObject/VRObjectVersion.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceConsole.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Core\Public\Misc/MonitoredProcess.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Sockets\Public\Sockets.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Sockets\Public\SocketSubsystem.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Sockets\Public\AddressInfoTypes.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Interfaces/IPv4/IPv4SubnetMask.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Interfaces/IPv4/IPv4Address.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Interfaces/IPv4/IPv4Endpoint.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Interfaces/IPv4/IPv4Subnet.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Interfaces/Steam/SteamEndpoint.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Interfaces/INetworkingModule.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Common/TcpSocketBuilder.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Common/TcpListener.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Common/UdpSocketReceiver.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Common/UdpSocketSender.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Networking\Public\Common/UdpSocketBuilder.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Online\HTTP\Public\Http.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Online\HTTP\Public\HttpModule.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpRequest.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpBase.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpResponse.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Online\HTTP\Public\PlatformHttp.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Online\HTTP\Public\Windows/WindowsPlatformHttp.h
+C:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Online\HTTP\Public\GenericPlatform/GenericPlatformHttp.h
+C:\github\LiveProductionUE5\Plugins\APSLiveLink\Intermediate\Build\Win64\UnrealEditor\Inc\APSLiveLink\APSMocapServerSync.generated.h
+C:\github\LiveProductionUE5\Plugins\APSLiveLink\Intermediate\Build\Win64\UnrealEditor\Inc\APSLiveLink\AnimNode_APSLiveLinkNode.generated.h
+C:/github/LiveProductionUE5/Plugins/APSLiveLink/Intermediate/Build/Win64/UnrealEditor/Inc/APSLiveLink/APSClient.gen.cpp
+C:\github\LiveProductionUE5\Plugins\APSLiveLink\Source\APSLiveLink/Public/APSClient.h
+C:\github\LiveProductionUE5\Plugins\APSLiveLink\Intermediate\Build\Win64\UnrealEditor\Inc\APSLiveLink\APSClient.generated.h
+C:/github/LiveProductionUE5/Plugins/APSLiveLink/Intermediate/Build/Win64/UnrealEditor/Inc/APSLiveLink/APSLiveLink.init.gen.cpp
+C:/github/LiveProductionUE5/Plugins/APSLiveLink/Intermediate/Build/Win64/UnrealEditor/Inc/APSLiveLink/APSMocapServerSync.gen.cpp
