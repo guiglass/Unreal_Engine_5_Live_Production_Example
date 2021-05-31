@@ -261,10 +261,10 @@ C:\github\LiveProductionUE5\Plugins\APSLiveLink\Intermediate\Build\Win64\UnrealE
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"C:\github\LiveProductionUE5\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/FI"C:\github\LiveProductionUE5\Intermediate\Build\Win64\LiveProductionUE5Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /FI"C:\github\LiveProductionUE5\Plugins\APSLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\APSLiveLinkEditor\Definitions.APSLiveLinkEditor.h"
-/Yu"C:\github\LiveProductionUE5\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\github\LiveProductionUE5\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Yu"C:\github\LiveProductionUE5\Intermediate\Build\Win64\LiveProductionUE5Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\github\LiveProductionUE5\Intermediate\Build\Win64\LiveProductionUE5Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
 /Fo"C:\github\LiveProductionUE5\Plugins\APSLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\APSLiveLinkEditor\Module.APSLiveLinkEditor.gen.cpp.obj"
 /Zc:inline
 /nologo

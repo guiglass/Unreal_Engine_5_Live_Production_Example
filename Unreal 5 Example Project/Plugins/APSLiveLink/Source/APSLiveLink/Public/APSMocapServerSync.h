@@ -135,9 +135,9 @@ public:
 	
 	bool StopMocapServer();
 
-	static FPoseContext& UpdateCurrentPose(FPoseContext& Output, TArray<ArmaturePoseMap> armatureToPoseMap, float avatarScale);
+	static FPoseContext& UpdateCurrentPose(::FPoseContext& Output, TArray<ArmaturePoseMap> armatureToPoseMap, float ImportUniformScale, bool CanUpdateLengths);
 	static TArray<ArmaturePoseMap> InitializeBoneReferences(FPoseContext& Output);
-	static bool ApplyMocapData(FPoseContext& Output, TArray<ArmaturePoseMap>& armatureToPoseMap);
+	static bool ApplyMocapData(::FPoseContext& Output, TArray<ArmaturePoseMap>& armatureToPoseMap, float ImportUniformScale = 1.0, bool CanUpdateLengths = true, bool CanUpdateBlendshapes = true);
 
 protected:
 	
