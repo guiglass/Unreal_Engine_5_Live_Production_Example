@@ -4,13 +4,14 @@
 ### There is still so much to work on and I would love to keep adding features to this plugin. Please check back often to see if any new updates are available!
 ### This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.5 or above. Check the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples.
 
-## Installing
+## Installing the necessary software.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Icons.png">
      <img width="20%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Icons.png">
   </a>
   <br>
 </p>
+
 Download [APS Luxor](https://www.mocapfusion.com/) v3.6.6 or above
 
 Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/unreal-engine-5-is-now-available-in-early-access/)
