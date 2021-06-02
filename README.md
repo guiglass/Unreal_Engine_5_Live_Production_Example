@@ -4,7 +4,10 @@
 ### There is still so much to work on and I would love to keep adding features to this plugin. Please check back often to see if any new updates are available!
 ### This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.5 or above. Check the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples.
 
-More documentaion coming soon!
+How to install:
+
+Step 1
+ - After downloading the example 
 
 Disclaimer: By using the resources in this example, you hereby agree that the author is not liable for losses, damages, injury resulting from the use of this example or derivations thereof. It is distributed as is and without any warranty or guarantees.
 
