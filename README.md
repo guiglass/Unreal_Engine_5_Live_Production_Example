@@ -5,7 +5,7 @@ The binaries for this plugin were built for Unreal Engine 5 on Windows 10 64bit,
 
 There is still so much to work on and I would love to keep adding features to this plugin. Please check back often to see if any new updates are available!
 
-This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.5 or above. Check the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples.
+This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.6 or above. Check the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples.
 
 ## Installing the necessary software.
 <p align="center">
