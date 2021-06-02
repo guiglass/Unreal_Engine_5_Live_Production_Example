@@ -28,7 +28,7 @@ Download [APS Luxor (v3.6.6)](https://www.mocapfusion.com/)
 
 
 ### Step 2 - Extract the contents to a folder.
-
+<p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_contents.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_contents.png">
   </a>
