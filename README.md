@@ -136,6 +136,6 @@ If the connection was successful you should see the mannequin in Unreal moves ex
   </a>
 </p>
 
-Disclaimer: By using the resources in this example, you hereby agree that the author is not liable for losses, damages, injury resulting from the use of this example or derivations thereof. It is distributed as is and without any warranty or guarantees.
+Disclaimer: By using the resources in this example you agree the author is not liable for losses, damages, injury resulting from the use of this example. This project is distributed as is and without any warranty or guarantees.
 
 Copyright *2021 Animation Prep Studios - Grant Olsen (AnimationPrepStudios@gmail.com)*
