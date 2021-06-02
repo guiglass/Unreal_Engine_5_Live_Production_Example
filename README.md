@@ -18,7 +18,7 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
 
 ## Setting up the UE5 live-link example project.
 
-# Step 1 - Download the example project
+### Step 1 - Download the example project
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_download.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_download.png">
@@ -27,7 +27,7 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
   Download the [Unreal_Engine_5_Live_Production_Example](https://github.com/guiglass/Unreal_Engine_5_Live_Production_Example) project.
 </p>
 
-# Step 2 - Extract the contents to a folder.
+### Step 2 - Extract the contents to a folder.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_contents.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_contents.png">
@@ -37,7 +37,7 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
   <sub><sup>Notice there are multiple folders, one is the UE5 project and the other is the custom avatar.</sup></sub> 
 </p>
 
-# Step 3 - Locate the .uproject file in the example project.
+### Step 3 - Locate the .uproject file in the example project.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_uproject.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_uproject.png">
@@ -46,7 +46,7 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
  The .uproject file is located in the <b>Unreal_Engine_5_Live_Production_Example</b> folder.
 </p>
 
-# Step 4 - Open the example UE5 project in Unreal Editor.
+### Step 4 - Open the example UE5 project in Unreal Editor.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_browse.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_browse.png">
@@ -55,7 +55,7 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
  Click on browse and select the .uproject from the <b>Unreal_Engine_5_Live_Production_Example</b> folder. 
 </p>
 
-# Step 5 - Setup the APS client IP address and frame rate.
+### Step 5 - Setup the APS client IP address and frame rate.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_sceneobject.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_sceneobject.png">
@@ -65,7 +65,7 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
    <sub><sup>If running APS on the same PC as Unreal then leave the IP as default loopback.</sup></sub> 
 </p>
 
-# Step 6 - Locate the mocap avatar data folder.
+### Step 6 - Locate the mocap avatar data folder.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_mocapavatar.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_mocapavatar.png">
@@ -74,7 +74,7 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
  Back in the folder we unzipped earlier now locate the mocap avatar data folder.
 </p>
 
-# Step 5 - Copy the mocap avatar data folder into the VR_MocapAssets folder.
+### Step 5 - Copy the mocap avatar data folder into the VR_MocapAssets folder.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_copyfolder.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_copyfolder.png">
@@ -83,7 +83,7 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
  Copy the avatar data folder.
 </p>
 
-# Step 6 - Copy the mocap avatar data folder into the VR_MocapAssets folder.
+### Step 6 - Copy the mocap avatar data folder into the VR_MocapAssets folder.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_pastefolder.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_pastefolder.png">
@@ -92,7 +92,7 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
  Paste the avatar data folder into the folder: <sub><sup>%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\VR_MocapAssets\</sup></sub>.
 </p>
 
-# Step 7 - Activate the mocap avatar.
+### Step 7 - Activate the mocap avatar.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_browseavatar.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_browseavatar.png">
@@ -101,7 +101,7 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
  Start APS and open the Avatar tab and the SK_Man avatar should now be available.
 </p>
 
-# Step 8 - Avatar now activated and is ready for recording.
+### Step 8 - Avatar now activated and is ready for recording.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_activateavatar.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_activateavatar.png">
@@ -110,7 +110,7 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
 The avatar is now waiting to be calibrated to the player.
 </p>
 
-# Step 9 - Calibrate TPose.
+### Step 9 - Calibrate TPose.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_calibrate.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_calibrate.png">
@@ -119,7 +119,7 @@ The avatar is now waiting to be calibrated to the player.
 While standing in a TPose press the two menu buttons simultaneously for three seconds.
 </p>
 
-# Step 10 - Connecting Live-Link.
+### Step 10 - Connecting Live-Link.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_simulate.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/step_simulate.png">
