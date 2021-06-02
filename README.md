@@ -25,10 +25,10 @@ Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/u
   </a>
   <br>
   Download the [Unreal_Engine_5_Live_Production_Example](https://github.com/guiglass/Unreal_Engine_5_Live_Production_Example) project.
-</p>
+
 
 ### Step 2 - Extract the contents to a folder.
-<p align="center">
+
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_contents.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_contents.png">
   </a>
