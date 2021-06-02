@@ -12,7 +12,7 @@
   <br>
 </p>
 
-Download [APS Luxor](https://www.mocapfusion.com/) v3.6.6 or above
+Download [APS Luxor (v3.6.6)](https://www.mocapfusion.com/)
 
 Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/unreal-engine-5-is-now-available-in-early-access/)
 
