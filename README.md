@@ -6,7 +6,7 @@ The binaries for this plugin were built using UE5 on Windows 10 64bit but the pl
 This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.6 or above and Unreal Engiene 5 editor. 
 
 ## Installing the necessary software.
-To get started you will need to download Unreal Engine editor and APS Luxor VR:
+To get started you will need to download these two programs:
 
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Icons.png">
