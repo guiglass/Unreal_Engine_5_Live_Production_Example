@@ -36,26 +36,29 @@ To get started first you will need to download and install these two programs:
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_contents.png">
   </a>
   <br>
-  After downloading the .zip you can unzip the contents to a folder on your hard drive
-  <sub><sup>Inside of the zip there are two folders, the UE5 project folder and a folder containing the custom avatar for APS.</sup></sub> 
-  
+
+After downloading the .zip you can unzip the contents to a folder on your hard drive
+
+<sub><sup>Inside of the zip there are two folders, the UE5 project folder and a folder containing the custom avatar for APS.</sup></sub> 
+
   <details><summary>📂 Unreal 5 Example Project.</summary>
-	This folder contains the UE5 project files.
+	*This folder contains the UE5 project files.*
    </details>
  
   <details><summary>📂 VR_MocapAssets.</summary>
-	This folder contains the custom avatar for APS.
+	*This folder contains a custom avatar for APS.*
    </details>
-  
 </p>
 
-### Step 3 - Locate the .uproject file from the example project.
+### Step 3 - Open the .uproject with Unreal Editor.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_uproject.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_uproject.png">
   </a>
   <br>
- The .uproject file is located in the <b>Unreal_Engine_5_Live_Production_Example</b> folder.
+	
+The .uproject file is located in the <b>📂 Unreal 5 Example Project</b> folder.
+	
 </p>
 
 ### Step 4 - Open the example UE5 project in Unreal Editor.
