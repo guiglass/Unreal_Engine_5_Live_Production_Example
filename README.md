@@ -26,7 +26,7 @@ To get started first you will need to download and install these two programs:
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_download.png">
   </a>
   <br>
-  Download the [Unreal_Engine_5_Live_Production_Example](https://github.com/guiglass/Unreal_Engine_5_Live_Production_Example) project from this Github repo.
+  Download the [Unreal_Engine_5_Live_Production_Example](https://github.com/guiglass/Unreal_Engine_5_Live_Production_Example/) project from this Github repo.
 
 ### Step 2 - Extract the contents and example project.
 <p align="center">
@@ -34,7 +34,7 @@ To get started first you will need to download and install these two programs:
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_contents.png">
   </a>
   <br>
-  After downloading the .zip unzip the contents to a folder on your harddrive. Unreal requires the path length for your project folder to be less than   c:\ drive (eg. c:\live_link_example\)
+  After downloading the .zip you can then unzip the contents to a folder on your harddrive. Unreal requires the path length for your project folder to be less than   c:\ drive (eg. c:\live_link_example\)
   <sub><sup>Notice there are multiple folders, one is the UE5 project and the other is the custom avatar.</sup></sub> 
 </p>
 
