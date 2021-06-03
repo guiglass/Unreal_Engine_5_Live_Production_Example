@@ -42,11 +42,11 @@ After downloading the .zip you can unzip the contents to a folder on your hard d
 <sub><sup>Inside of the zip there are two folders, the UE5 project folder and a folder containing the custom avatar for APS.</sup></sub> 
 
   <details><summary>📂 Unreal 5 Example Project.</summary>
-	*This folder contains the UE5 project files.*
+	  <b>This folder contains the UE5 project files.</b>
    </details>
  
   <details><summary>📂 VR_MocapAssets.</summary>
-	*This folder contains a custom avatar for APS.*
+	  <b>This folder contains a custom avatar for APS.</b>
    </details>
 </p>
 
