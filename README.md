@@ -27,7 +27,7 @@ To get started first you will need to download and install these two programs:
   </a>
   <br>
   
-  Download the [Unreal_Engine_5_Live_Production_Example](https://github.com/guiglass/Unreal_Engine_5_Live_Production_Example/) project from this Github repo.
+  Download the [Unreal_Engine_5_Live_Production_Example](https://github.com/guiglass/Unreal_Engine_5_Live_Production_Example/archive/refs/heads/main.zip) project from this Github repo.
 </p>
   
 ### Step 2 - Extract the contents of the example project.
