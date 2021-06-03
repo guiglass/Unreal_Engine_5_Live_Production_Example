@@ -1,7 +1,7 @@
 # Unreal Engine 5 plugin for APS (live-link)
-This is a complete exampel project that shows how to use a custom avatar from APS Luxor and live-link full body tracking and facial capture with characters in Unreal Engine 5. This plugin can be used in live production environments or to simply record a animation directly in Unreal Editor.
+This is a complete exampel project for UE5 that shows how to use a custom APS Luxor avatars with live-link full body tracking and facial capture on characters in Unreal Engine. This plugin can be used in live production environments or to simply record a animation directly in Unreal Editor.
 
-The binaries for this plugin were built using UE5 on Windows 10 64bit but the plugin should also be compatible with UE4.
+The binaries for this plugin were compile using UE5 on Windows 10 64bit <i>but the plugin should also be compatible with UE4</i>.
 
 This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.6 or above and Unreal Engiene 5 editor. 
 
@@ -14,32 +14,31 @@ This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.6 or a
   <br>
 </p>
 
-To get started you will need to download these two programs:
+To get started first you will need to download and install these two programs:
  - [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/unreal-engine-5-is-now-available-in-early-access/)
  - [APS Luxor (v3.6.6)](https://www.mocapfusion.com/)
 
 ## Setting up the UE5 live-link example project.
 
-### Step 1 - Download the example project
+### Step 1 - Download the example project from Github.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_download.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_download.png">
   </a>
   <br>
-  Download the [Unreal_Engine_5_Live_Production_Example](https://github.com/guiglass/Unreal_Engine_5_Live_Production_Example) project.
+  Download the [Unreal_Engine_5_Live_Production_Example](https://github.com/guiglass/Unreal_Engine_5_Live_Production_Example) project from this Github repo.
 
-
-### Step 2 - Extract the contents to a folder.
+### Step 2 - Extract the contents and example project.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_contents.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_contents.png">
   </a>
   <br>
-  Unpack the .zip to a folder near the c:\ drive (eg. c:\live_link_example\)
+  After downloading the .zip unzip the contents to a folder on your harddrive. Unreal requires the path length for your project folder to be less than   c:\ drive (eg. c:\live_link_example\)
   <sub><sup>Notice there are multiple folders, one is the UE5 project and the other is the custom avatar.</sup></sub> 
 </p>
 
-### Step 3 - Locate the .uproject file in the example project.
+### Step 3 - Locate the .uproject file from the example project.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_uproject.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Step_uproject.png">
