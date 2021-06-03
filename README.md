@@ -1,7 +1,7 @@
 # Unreal Engine 5 live production for plugin for APS.
 This project is a 'work in progress'. This project shows connecting avatars in APS Luxor to characters in Unreal Engine 5 for realtime production.
 
-The binaries for this plugin were built for Unreal Engine 5 on Windows 10 64bit, the plugin should still work in UE4 and UE5.
+The binaries for this plugin were built for UE5 on Windows 10 64bit but the plugin should also work with UE4.
 
 There is still so much to work on and I would love to keep adding features to this plugin. Please check back often to see if any new updates are available!
 
