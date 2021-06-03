@@ -1,5 +1,5 @@
 # Unreal Engine 5 plugin for APS (live-link)
-In this exampel project shows how to connect a custom avatar in APS Luxor to a character in Unreal Engine 5. This can be used in a live production environment or to be used for record a animation directly in Unreal Editor.
+This is a complete exampel project that shows how to use a custom avatar from APS Luxor and live-link full body tracking and facial capture with characters in Unreal Engine 5. This plugin can be used in live production environments or to simply record a animation directly in Unreal Editor.
 
 The binaries for this plugin were built using UE5 on Windows 10 64bit but the plugin should also be compatible with UE4.
 
