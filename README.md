@@ -15,9 +15,8 @@ To get started you will need to download these two programs:
   <br>
 </p>
 
-Download and install [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/unreal-engine-5-is-now-available-in-early-access/)
-
-Download [APS Luxor (v3.6.6)](https://www.mocapfusion.com/)
+ - [Unreal Engine 5](https://www.unrealengine.com/en-US/blog/unreal-engine-5-is-now-available-in-early-access/)
+ - [APS Luxor (v3.6.6)](https://www.mocapfusion.com/)
 
 ## Setting up the UE5 live-link example project.
 
