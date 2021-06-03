@@ -1,4 +1,4 @@
-# Unreal Engine 5 plugin for APS (live-link).
+# Unreal Engine 5 plugin for APS (live-link)
 This project is a 'work in progress'. This project shows connecting avatars in APS Luxor to characters in Unreal Engine 5 for realtime production.
 
 The binaries for this plugin were built for UE5 on Windows 10 64bit but the plugin should also work with UE4.
@@ -8,6 +8,8 @@ There is still so much to work on and I would love to keep adding features to th
 This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.6 or above. Check the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples.
 
 ## Installing the necessary software.
+To get started you will need to download Unreal Engine editor and APS Luxor VR:
+
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Icons.png">
      <img width="20%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Icons.png">
