@@ -38,6 +38,15 @@ To get started first you will need to download and install these two programs:
   <br>
   After downloading the .zip you can unzip the contents to a folder on your hard drive
   <sub><sup>Inside of the zip there are two folders, the UE5 project folder and a folder containing the custom avatar for APS.</sup></sub> 
+  
+  <details><summary>📂 Unreal 5 Example Project.</summary>
+	This folder contains the UE5 project files.
+   </details>
+ 
+  <details><summary>📂 VR_MocapAssets.</summary>
+	This folder contains the custom avatar for APS.
+   </details>
+  
 </p>
 
 ### Step 3 - Locate the .uproject file from the example project.
