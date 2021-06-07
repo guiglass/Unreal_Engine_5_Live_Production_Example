@@ -3,7 +3,7 @@ This is a complete exampel project for UE5 that shows how to use a custom APS Lu
 
 The binaries for this plugin were compile using UE5 on Windows 10 64bit <i>but the plugin should also be compatible with UE4</i>.
 
-This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.6 or above and Unreal Engiene 5 editor. 
+This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.7 or above and Unreal Engiene 5 editor. 
 
 ## Installing the necessary software.
 
