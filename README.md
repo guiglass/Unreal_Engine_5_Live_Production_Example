@@ -163,9 +163,10 @@ The animation node should be connected directly to the Output Pose.
 </p>
 
 Note that the Avatar Pose Receiver also includes a real-time re-targeting feature located in the Details tab. This can be helpful when your mocap avatar and Unreal game characters skeletons are slightly different or have offsets after calibrating tpose. You may override rotation or translation offsets by enabling the checkboxes for any of the different bone groups: Neck, Spine, Shoulders, Legs, Arms, Hands and Fingers. Also notice the Rotation Weight and Location Weight fields for setting the amount of retargeting offset. 
+
+--------
 	
-	
-I am continually adding to the documentation and working on updates for the plugin, please check back again soon!!
+I am still adding to this documentation as I release updates for the plugin, please check back again soon!!
 
 Check the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples.
 
