@@ -16,6 +16,19 @@ class UAPSMocapServerSync;
 // The APS motion capture data sync module.
 static UAPSMocapServerSync* APSData;
 
+UENUM()
+enum BoneGroup
+{
+	none,
+	neck,
+	spine,
+	legs,
+	clavicles,
+	arms,
+	hands,
+	fingers,
+};
+
 USTRUCT()
 struct FAvatarBone
 {
@@ -34,6 +47,12 @@ struct FAvatarBone
 	int hasPosition; //JSON Var
 	
 	UPROPERTY()
+	FVector iPosition; //JSON Var
+	
+	UPROPERTY()
+	FVector deltPosition;
+	
+	UPROPERTY()
 	int startIdxRotation = -1;
 
 	UPROPERTY()
@@ -41,9 +60,15 @@ struct FAvatarBone
 	
 	UPROPERTY()
 	int hasRotation; //JSON Var
+	
+	UPROPERTY()
+	FQuat iRotation; //JSON Var
 
 	UPROPERTY()
-	FQuat iRotation;
+	FQuat deltRotation;
+	
+	UPROPERTY()
+	TEnumAsByte<BoneGroup> boneGroup; //JSON Var
 };
 
 USTRUCT()
@@ -113,7 +138,7 @@ public:
 	
 	// Getters
 	FString getVersion() {
-		return "1.0.0";
+		return "1.0.1";
 	}
 
 	bool isConnected() {
@@ -135,9 +160,91 @@ public:
 	
 	bool StopMocapServer();
 
-	static FPoseContext& UpdateCurrentPose(::FPoseContext& Output, TArray<ArmaturePoseMap> armatureToPoseMap, float ImportUniformScale, bool CanUpdateLengths);
-	static TArray<ArmaturePoseMap> InitializeBoneReferences(FPoseContext& Output);
-	static bool ApplyMocapData(::FPoseContext& Output, TArray<ArmaturePoseMap>& armatureToPoseMap, float ImportUniformScale = 1.0, bool CanUpdateLengths = true, bool CanUpdateBlendshapes = true);
+	static FPoseContext& UpdateCurrentPose(::
+		FPoseContext& Output,
+		TArray<ArmaturePoseMap> armatureToPoseMap,
+		float ImportUniformScale,
+		bool CanUpdateLengths,
+		
+		bool rnr,
+		float wnr,
+		bool rnl,
+		float wnl,
+	 	
+		bool rsr,
+		float wsr,
+		bool rsl,
+		float wsl,
+	 	
+		bool rcr,
+		float wcr,
+		bool rcl,
+		float wcl,
+		
+		bool rar,
+		float war,
+		bool ral,
+		float wal,
+	
+		bool rlr,
+		float wlr,
+		bool rll,
+		float wll,
+	
+		bool rhr,
+		float whr,
+		bool rhl,
+		float whl,
+
+		bool rfr,
+		float wfr,
+		bool rfl,
+		float wfl
+		);
+	static TArray<ArmaturePoseMap> InitializeBoneReferences(FPoseContext& Output, float ImportUniformScale);
+	static bool ApplyMocapData(::
+		FPoseContext& Output,
+		TArray<ArmaturePoseMap>& armatureToPoseMap,
+		
+		bool rnr,
+		float wnr,
+		bool rnl,
+		float wnl,
+	 	
+		bool rsr,
+		float wsr,
+		bool rsl,
+		float wsl,
+
+		bool rcr,
+		float wcr,
+		bool rcl,
+		float wcl,
+		
+		bool rar,
+		float war,
+		bool ral,
+		float wal,
+	
+		bool rlr,
+		float wlr,
+		bool rll,
+		float wll,
+	
+		bool rhr,
+		float whr,
+		bool rhl,
+		float whl,
+
+		bool rfr,
+		float wfr,
+		bool rfl,
+		float wfl,
+		
+		float ImportUniformScale = 1.0,
+		bool CanUpdateLengths = true,
+		bool CanUpdateBlendshapes = true
+		);
 
 protected:
 	
