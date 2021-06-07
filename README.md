@@ -151,6 +151,19 @@ If the connection was successful you should see the mannequin in Unreal moves ex
   </a>
 </p>
 
+### The *Avatar Pose Receiver (APS Live-Link)* Node.
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/realtime_retargeting.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/realtime_retargeting.png">
+  </a>
+  <br>
+	The <b>Avatar Pose Receiver (APS Live-Link)</b> animation node is placed in the Animation Blueprints for SkeletalMeshes. The animation node should be connected directly to the Output Pose.
+	  <br>
+	The Avatar Pose Receiver also includes a real-time re-targeting feature located in the Details tab. This can be helpful when your mocap avatar and Unreal game characters skeletons are slightly different or have offsets after calibrating tpose. You may override rotation or translation offsets by enabling the checkboxes for any of the different bone groups: Neck, Spine, Shoulders, Legs, Arms, Hands and Fingers. Also notice the Rotation Weight and Location Weight fields for setting the amount of retargeting offset. 
+</p>
+
+I'm constant working on documentation and updates to the plugin, please check back again soon!!
+
 Check the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples.
 
 Disclaimer: By using the resources in this example you agree the author is not liable for losses, damages, injury resulting from the use of this example. This project is distributed as is and without any warranty or guarantees.
