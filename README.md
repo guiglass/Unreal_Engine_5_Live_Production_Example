@@ -162,7 +162,7 @@ The Avatar Pose Receiver node is found in the Animation Blueprints for SkeletalM
 The animation node should be connected directly to the Output Pose.
 </p>
 
-Note that the Avatar Pose Receiver also includes a real-time re-targeting feature located in the Details tab. This can be helpful when your mocap avatar and Unreal game characters skeletons are slightly different or have offsets after calibrating tpose. You may override rotation or translation offsets by enabling the checkboxes for any of the different bone groups: Neck, Spine, Shoulders, Legs, Arms, Hands and Fingers. Also notice the Rotation Weight and Location Weight fields for setting the amount of retargeting offset. 
+Note that the Avatar Pose Receiver also includes a real-time re-targeting feature located in the Details tab. This can be helpful if the mocap avatar in APS and Unreal game character's skeleton are slightly different from each other and can correct offsets after tpose calibration. You may enable and override rotation or translation offsets by using the checkboxes for any of the bone groups: Neck, Spine, Shoulders, Legs, Arms, Hands and Fingers. The Rotation Weight and Location Weight input fields are for setting the amount of retargeting. 
 
 --------
 	
