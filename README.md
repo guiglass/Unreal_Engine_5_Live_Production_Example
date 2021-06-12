@@ -156,11 +156,10 @@ If the connection was successful you should see the mannequin in Unreal moves ex
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/realtime_retargeting.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/realtime_retargeting.png">
   </a>
-  <br>
+</p>
 The <b>AvatarPoseReceiver</b> node is found in the Animation Blueprints for SkeletalMeshes. 
 <br>
 The animation node should be connected directly to the Output Pose.
-</p>
 
 Note that the <b>AvatarPoseReceiver</b> node also includes a real-time re-targeting feature located in the Details tab. This can be helpful if the mocap avatar in APS and Unreal game character's skeleton are slightly different from each other and can correct offsets after tpose calibration. You may enable and override rotation or translation offsets by using the checkboxes for any of the bone groups: Neck, Spine, Shoulders, Legs, Arms, Hands and Fingers. The Rotation Weight and Location Weight input fields are for setting the amount of retargeting. 
 
@@ -169,11 +168,8 @@ Note that the <b>AvatarPoseReceiver</b> node also includes a real-time re-target
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/arkit_receiver.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/arkit_receiver.png">
   </a>
-  <br>
-The <b>AvatarARKitReceiver</b> node is found in the Animation Blueprint. This node can optionally be added to the heads blueprint of MetaHumans in Unreal for including facecap from APS and the <a href="https://www.mocapfusion.com/sidekick-app">APS Sidekick</a> IOS app.
-<br>
 </p>
-
+The <b>AvatarARKitReceiver</b> node is found in the Animation Blueprint. This node can optionally be added to the heads blueprint of MetaHumans in Unreal for including facecap from APS and the <a href="https://www.mocapfusion.com/sidekick-app">APS Sidekick</a> IOS app.
 --------
 	
 I am still adding to this documentation as I release updates for the plugin, please check back again soon!!
