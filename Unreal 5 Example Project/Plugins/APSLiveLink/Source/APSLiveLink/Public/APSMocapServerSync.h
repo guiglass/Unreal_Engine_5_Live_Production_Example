@@ -88,8 +88,8 @@ struct FAvatarData
 	UPROPERTY()
 	float hip_scale = 1;
 
-	UPROPERTY()
-	UAnimInstance* aInstance; //the animations instance for setting the blendshapes
+	//UPROPERTY()
+	//UAnimInstance* aInstance; //the animations instance for setting the blendshapes
 	
 	UPROPERTY()
 	int32  blendshapes; //JSON Var
@@ -97,6 +97,12 @@ struct FAvatarData
 	UPROPERTY()
 	TArray<FName> blendshapeNames; //JSON Var
 
+	//UPROPERTY()
+	//TArray<int> blendshapeUIDs;
+
+	//UPROPERTY()
+	//TArray<float> blendshapeValues;
+	
 	UPROPERTY()
 	int32  buffer; //JSON Var
 
@@ -134,7 +140,7 @@ public:
 	UAPSMocapServerSync(const FObjectInitializer& ObjectInitializer);
 	
 	// Call this to create the thread and start it going
-	void StartProcess();
+	//void StartProcess();
 	
 	// Getters
 	FString getVersion() {
@@ -162,9 +168,14 @@ public:
 
 	static FPoseContext& UpdateCurrentPose(::
 		FPoseContext& Output,
-		TArray<ArmaturePoseMap> armatureToPoseMap,
+		
+		TArray<ArmaturePoseMap>& armatureToPoseMap,
+		TArray<SmartName::UID_Type>& blendshapeCurveMap,
+		TArray<float>& blendshapeValuesMap,
+		
 		float ImportUniformScale,
 		bool CanUpdateLengths,
+		bool CanUpdateBlendshapes,
 		
 		bool rnr,
 		float wnr,
@@ -201,10 +212,13 @@ public:
 		bool rfl,
 		float wfl
 		);
+	static void InitializeARKitReferences(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeIDs, TArray<float>& blendshapeValuesMap);	
 	static TArray<ArmaturePoseMap> InitializeBoneReferences(FPoseContext& Output, float ImportUniformScale);
 	static bool ApplyMocapData(::
 		FPoseContext& Output,
 		TArray<ArmaturePoseMap>& armatureToPoseMap,
+		TArray<SmartName::UID_Type>& blendshapeCurveMap,
+		TArray<float>& blendshapeValuesMap,
 		
 		bool rnr,
 		float wnr,
@@ -245,6 +259,9 @@ public:
 		bool CanUpdateLengths = true,
 		bool CanUpdateBlendshapes = true
 		);
+	static void ApplyARKitData(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeCurveMap, TArray<float>& blendshapeValuesMap);
+	
+	static void UpdateCurves(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeCurveMap, TArray<float>& blendshapeValuesMap);
 
 protected:
 	
@@ -269,7 +286,7 @@ protected:
 
 	void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 	
-	static void UpdateBlendshapes(int startIdx, float* data, UAnimInstance* aInstance);
+	//static void UpdateBlendshapes(int startIdx, float* data, UAnimInstance* aInstance);
 
 	void HandleDownloadRequest(FHttpRequestPtr HttpRequest, FHttpResponsePtr HttpResponse, bool bSucceeded);
 

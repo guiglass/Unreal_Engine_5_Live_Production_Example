@@ -6,7 +6,7 @@
 #include "BoneContainer.h"
 #include "APSMocapServerSync.h"
 #include "AnimNode_APSLiveLinkNode.generated.h"
-
+/*
 USTRUCT()
 struct FBoneRef
 {
@@ -15,7 +15,7 @@ struct FBoneRef
 		UPROPERTY(EditAnywhere, Category = "Settings")
 		FBoneReference Bone;
 };
-
+*/
 USTRUCT(BlueprintType)
 struct APSLIVELINK_API FAnimNode_APSLiveLinkNode : public FAnimNode_Base
 {
@@ -23,9 +23,14 @@ struct APSLIVELINK_API FAnimNode_APSLiveLinkNode : public FAnimNode_Base
 	GENERATED_BODY()
 
 	TArray<ArmaturePoseMap> armatureToPoseMap;
+	TArray<SmartName::UID_Type> blendshapeCurveMap;
+	TArray<float> blendshapeValuesMap;
 
 	FPoseLink BasePose;
 
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Settings (APS Live-Link)")
+	//FPoseLink InPose;
+	
 	//Apply bone translations for bones that can be stretched.
 	//Some bones can translate as well as rotate, but translation is optional and may not be desired.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Settings (APS Live-Link)")
@@ -34,7 +39,7 @@ struct APSLIVELINK_API FAnimNode_APSLiveLinkNode : public FAnimNode_Base
 	//Apply facial expression blendshapes to this mesh.
 	//"Import Morph Targets" checkbox must be enabled when importing this avatar.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Settings (APS Live-Link)")
-	bool CanUpdateBlendshapes = true;
+	bool CanUpdateBlendshapes = false;
 
 	//This value must match the "Import Uniform Scale" value as found in the "Import Settings" under Mesh tab. This is very important!
 	//If avatar appears stretched then please ensure the value is set exactly as was set in "Import Uniform Scale" when importing the avatar.
