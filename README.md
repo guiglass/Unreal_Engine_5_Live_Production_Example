@@ -190,7 +190,7 @@ You can find the <b>\Error_Logs</b> folder located in the APS LUXOR game data fo
 <br><br>
 You can find the log file located in the folder: <b><i>%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Error_Logs\</i></b>
 <br><br>
-In some cases it may be desireable to change the listening port from the default 10000. In that case you may locate the <b>\Configs</b> folder in the APS LUXOR game data folder where the (UE_LIVE_LINK_CONFIG.dat) .JSON file lives which allows the users to change some of the (low level) game parameters such as the live-link port number to listen on. <i>By testing various port numbers may resolve some issues.</i>
+In some cases it may be desireable to change the listening port from the default 10000. In this case you may locate the <b>\Configs</b> folder in the APS LUXOR game data folder where the (UE_LIVE_LINK_CONFIG.dat) .JSON file lives which allows the users to change some of the (low level) game parameters such as the live-link port number to listen on. <i>By testing various port numbers may resolve some issues.</i>
 <br><br>
 You can find the config file located in the folder: <b><i>%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Configs\</i></b>
 <br><br>
