@@ -40,6 +40,10 @@ public:
 	FString IpAddr = TEXT("127.0.0.1");
 	//Note: APS Live-Link Port = 10000
 
+	/** The listening port number on the PC running a APS motion capture server, port number must exactly match listening port on server (default 10000) */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link)")
+	int IpPort = 10000;
+	
 	/** The frequency at which to poll for motion capture data from the APS motion capture server. */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link)")
 	TEnumAsByte<SyncRates> SyncRate = FPS_60;

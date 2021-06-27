@@ -162,7 +162,7 @@ public:
 	//Send a message (main thread)
 	bool SocketSend();
 	
-	void StartMocapServer(FString ipString);
+	void StartMocapServer(FString ip, int port);
 	
 	bool StopMocapServer();
 
