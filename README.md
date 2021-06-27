@@ -188,7 +188,7 @@ You can find the config file located in the folder: <b><i>%USERPROFILE%\AppData\
 <br><br>
 --------
 	
-I am still adding to this documentation as I release updates for the plugin, please check back again soon!!
+I am always adding to this repo and updateing documentation, please check back soon for updates!!
 
 Check the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples.
 
