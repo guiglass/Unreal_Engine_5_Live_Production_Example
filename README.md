@@ -180,11 +180,11 @@ The <b>AvatarARKitReceiver</b> node is found in the Animation Blueprint. This no
 </p>
 You can find the <b>\Error_Logs</b> folder located in the APS LUXOR game data folder. The APS live-link server generates a new log file (LOG_APS_UE_LIVE_LINK.txt) in that directory whenever it initializes and should give a full picture of what the thread was doing at the time the client connected or disconnected, and logs any exceptions that might have been thrown.
 <br><br>
-You can find the log file located in the folder: ***%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Error_Logs\***
+You can find the log file located in the folder: <b><i>%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Error_Logs\</i></b>
 <br><br>
 In some cases it may be desireable to change the listening port number from the default 10000. In which case you can locate the <b>\Configs</b> folder in the APS LUXOR game data folder where the (UE_LIVE_LINK_CONFIG.dat) .JSON file lives that allows you to change (low level) game parameters such as the live-link port number. <i>By trying different port numbers may resolve some issues!!</i>
 <br><br>
-You can find the config file located in the folder: ***%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Configs\***
+You can find the config file located in the folder: <b><i>%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Configs\</i></b>
 <br><br>
 --------
 	
