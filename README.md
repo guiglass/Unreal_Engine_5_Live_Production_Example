@@ -171,6 +171,21 @@ Note that the <b>AvatarPoseReceiver</b> node also includes a real-time re-target
 </p>
 The <b>AvatarARKitReceiver</b> node is found in the Animation Blueprint. This node can optionally be added to the heads blueprint of MetaHumans in Unreal for including facecap from APS and the <a href="https://www.mocapfusion.com/sidekick-app">APS Sidekick</a> IOS app.
 
+
+### Troubleshooting.
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/config_port.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/config_port.png">
+  </a>
+</p>
+You can find the <b>\Error_Logs</b> folder located in the APS LUXOR game data folder. The APS live-link server generates a new log file (LOG_APS_UE_LIVE_LINK.txt) in that directory whenever it initializes and should give a full picture of what the thread was doing at the time the client connected or disconnected, and logs any exceptions that might have been thrown.
+<br><br>
+You can find the log file located in the folder: `%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Error_Logs\`
+<br><br>
+In some cases it may be desireable to change the listening port number from the default 10000. In which case you can locate the <b>\Configs</b> folder in the APS LUXOR game data folder where the (UE_LIVE_LINK_CONFIG.dat) .JSON file lives that allows you to change (low level) game parameters such as the live-link port number. <i>By trying different port numbers may resolve some issues!!</i>
+<br><br>
+You can find the config file located in the folder: `%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Configs\`
+<br><br>
 --------
 	
 I am still adding to this documentation as I release updates for the plugin, please check back again soon!!
