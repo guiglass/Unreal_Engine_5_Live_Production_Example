@@ -169,7 +169,14 @@ Note that the <b>AvatarPoseReceiver</b> node also includes a real-time re-target
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/arkit_receiver.png">
   </a>
 </p>
-The <b>AvatarARKitReceiver</b> node is found in the Animation Blueprint. This node can optionally be added to the heads blueprint of MetaHumans in Unreal for including facecap from APS and the <a href="https://www.mocapfusion.com/sidekick-app">APS Sidekick</a> IOS app.
+It is now possible to use the APS Sidekick IOS app with your live production avatars! And also works for easily adding APS Sidekick facecap to MetaHumans. The <b>AvatarARKitReceiver</b> node can be added to the Animation Blueprint. This node is optional.
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Sidekick121.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Sidekick121.png">
+  </a>
+</p>
+The APS Sidekick facecap app for IOS download and testflight applicaton can be found <a href="https://www.mocapfusion.com/sidekick-app">here</a>.
 
 
 ### Troubleshooting.
