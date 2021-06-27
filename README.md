@@ -190,7 +190,10 @@ You can find the config file located in the folder: <b><i>%USERPROFILE%\AppData\
 <br><br>
 This repo and the documentation are updated often. Check back soon for more features and improvements!
 
-Check the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples.
+
+You're invited to join the [APS Discord](https://discord.com/invite/ErZcKaQ) for tech support, showcases, and chatting with the community of artists and developers.
+
+Please visit the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples and tutorials.
 
 Disclaimer: By using the resources in this example you agree the author is not liable for losses, damages, injury resulting from the use of this example. This project is distributed as is and without any warranty or guarantees.
 
