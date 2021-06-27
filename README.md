@@ -177,7 +177,7 @@ The Sidekick facecap app can be used to add facial capture to any .fbx or metahu
      <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Sidekick121.png">
   </a>
 </p>
-The APS Sidekick facecap app for IOS download and testflight applicaton can be found <a href="https://www.mocapfusion.com/sidekick-app">here</a>.
+Sidekick facecap app for IOS download and testflight applicaton can be found <a href="https://www.mocapfusion.com/sidekick-app">here</a>.
 
 
 ### Troubleshooting.
