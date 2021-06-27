@@ -187,8 +187,8 @@ In some cases it may be desireable to change the listening port number from the 
 You can find the config file located in the folder: <b><i>%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Configs\</i></b>
 <br><br>
 --------
-	
-I am always adding to this repo and updateing documentation, please check back soon for updates!!
+<br><br>
+This repo and the documentation are updated often. Check back soon for more features and improvements!
 
 Check the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples.
 
