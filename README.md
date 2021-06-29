@@ -151,6 +151,17 @@ If the connection was successful you should see the mannequin in Unreal moves ex
   </a>
 </p>
 
+### Connect *Multiple Clients And Avatars* In A Single Scene.
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/live_link_configs.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/live_link_configs.png">
+  </a>
+</p>
+The <b>APSCore</b> allows using up to four simultaneous clients for connect to multiple . 
+<br>
+By setting the Ip Port to -1 will disable that client in the scene.
+
+
 ### The *Avatar Pose Receiver (APS Live-Link)* Node.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/realtime_retargeting.png">
