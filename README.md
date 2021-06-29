@@ -158,9 +158,10 @@ If the connection was successful you should see the mannequin in Unreal moves ex
   </a>
   <br>
 The <b>APSCore</b> allows connecting up to four simultaneous clients creating multi-avatar live productions. 
+	<br>
+	<i>Note that by setting any of the <b>Ip Port</b> parameters to -1 will disable that client.</i>
 </p>
-Note that by setting the Ip Port parameter to -1 will disable that client in the scene.
-<br>
+
 
 ### The *Avatar Pose Receiver (APS Live-Link)* Node.
 <p align="center">
