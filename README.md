@@ -169,13 +169,39 @@ Note that the <b>AvatarPoseReceiver</b> node also includes a real-time re-target
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/arkit_receiver.png">
   </a>
 </p>
-The <b>AvatarARKitReceiver</b> node is found in the Animation Blueprint. This node can optionally be added to the heads blueprint of MetaHumans in Unreal for including facecap from APS and the <a href="https://www.mocapfusion.com/sidekick-app">APS Sidekick</a> IOS app.
+It is now possible to use the APS Sidekick IOS app with your live production avatars! And also works for easily adding APS Sidekick facecap to MetaHumans. The <b>AvatarARKitReceiver</b> node can be added to the Animation Blueprint. This node is optional!
+<br><br>
+The Sidekick facecap app can be used to add facial capture to any .fbx or metahuman that includes facial blendshapes. Avatars there were built using the APS_SDK may have the optional facecal linker component added and may be used to stream facecap data to the live production avatar in UE.
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Sidekick121.png">
+     <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Sidekick121.png">
+  </a>
+</p>
+Sidekick facecap app for IOS download and testflight applicaton can be found <a href="https://www.mocapfusion.com/sidekick-app">here</a>.
 
+
+### Troubleshooting.
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/config_port.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/config_port.png">
+  </a>
+</p>
+You can find the <b>\Error_Logs</b> folder located in the APS LUXOR game data folder. The APS live-link server generates a new log file (LOG_APS_UE_LIVE_LINK.txt) in that directory whenever it initializes and should give a full picture of what the thread was doing at the time the client connected or disconnected, and logs any exceptions that might have been thrown.
+<br><br>
+You can find the log file located in the folder: <b><i>%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Error_Logs\</i></b>
+<br><br>
+In some cases it may be desireable to change the listening port from the default 10000. In this case you may locate the <b>\Configs</b> folder located in the APS LUXOR game data folder where the (UE_LIVE_LINK_CONFIG.dat) .JSON file lives which allows users to change some of the (low level) game parameters such as the live-link port number. <i>Changing the port number may resolve connection issues in some cases.</i>
+<br><br>
+You can find the config file located in the folder: <b><i>%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Configs\</i></b>
+<br><br>
 --------
-	
-I am still adding to this documentation as I release updates for the plugin, please check back again soon!!
+<br><br>
+This repo and the documentation are updated often. Check back soon for more features and improvements!
+<br><br>
 
-Check the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples.
+You're invited to join the [APS Discord](https://discord.com/invite/ErZcKaQ) for tech support, showcases, and chatting with a community of artists and developers.
+
+Please visit the [Youtube Channel](https://www.youtube.com/channel/UCjHMxbBzessAD-Hf4EHbngg?sub_confirmation=1) for examples and tutorials.
 
 Disclaimer: By using the resources in this example you agree the author is not liable for losses, damages, injury resulting from the use of this example. This project is distributed as is and without any warranty or guarantees.
 
