@@ -156,9 +156,8 @@ If the connection was successful you should see the mannequin in Unreal moves ex
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/live_link_configs.png">
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/live_link_configs.png">
   </a>
-</p>
 The <b>APSCore</b> allows using up to four simultaneous clients for connect to multiple . 
-<br>
+</p>
 Note that by setting the Ip Port parameter to -1 will disable that client in the scene.
 <br>
 
