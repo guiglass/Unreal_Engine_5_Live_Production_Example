@@ -5,7 +5,7 @@
 			"app_key": "application.generated.ue.exampleproject-16433597.unrealeditor.exe",
 			"launch_type": "url",
 			"url": "steam://launch/",
-			"action_manifest_path": "C:/Users/Scotty/Documents/GitHub/Grants_UE5_LiveLink_Plugin_Example/ExampleProject/Config/SteamVRBindings/steamvr_manifest.json",
+			"action_manifest_path": "C:/Users/Scotty/Documents/GitHub/Unreal_Engine_5_Live_Production_Example/Unreal 5 Example Project/Config/SteamVRBindings/steamvr_manifest.json",
 			"strings":
 			{
 				"en_us":

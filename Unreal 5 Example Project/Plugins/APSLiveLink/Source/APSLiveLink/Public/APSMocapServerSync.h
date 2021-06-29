@@ -14,7 +14,16 @@
 
 class UAPSMocapServerSync;
 // The APS motion capture data sync module.
-static UAPSMocapServerSync* APSData;
+////static UAPSMocapServerSync* APSData;
+
+UENUM()
+enum ClientNumbers
+{
+	CLIENT_0 = 0  UMETA(DisplayName = "Client 0"),
+	CLIENT_1 = 1  UMETA(DisplayName = "Client 1"),
+	CLIENT_2 = 2  UMETA(DisplayName = "Client 2"),
+	CLIENT_3 = 3  UMETA(DisplayName = "Client 3"),
+};
 
 UENUM()
 enum BoneGroup
@@ -129,7 +138,7 @@ struct ArmaturePoseMap
 	int poseBone = -1;	//Unreal ref pose indexes 
 };
 
-static bool canSendSocket = false;
+////static bool canSendSocket = false;
 	
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class APSLIVELINK_API UAPSMocapServerSync : public UActorComponent
@@ -144,15 +153,23 @@ public:
 	
 	// Getters
 	FString getVersion() {
-		return "1.0.1";
+		return "1.0.2";
 	}
 
 	bool isConnected() {
 		return canSendSocket;
 	}
+
+	bool canSendSocket = false;
 	
+	// Main update timer, since last update
+	float LastSendTime; 
+
+	UAPSMocapServerSync* APSData;
+
 	TArray<float> GetBlendshapeValues();
-	
+
+
 	float avatarScale = 1.0;
 	
 	FAvatarData armatureData;
@@ -162,7 +179,7 @@ public:
 	//Send a message (main thread)
 	bool SocketSend();
 	
-	void StartMocapServer(FString ip, int port);
+	void StartMocapServer(FString ip, int port, int client);
 	
 	bool StopMocapServer();
 
@@ -176,6 +193,8 @@ public:
 		float ImportUniformScale,
 		bool CanUpdateLengths,
 		bool CanUpdateBlendshapes,
+
+		int ClientNumber,
 		
 		bool rnr,
 		float wnr,
@@ -212,13 +231,15 @@ public:
 		bool rfl,
 		float wfl
 		);
-	static void InitializeARKitReferences(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeIDs, TArray<float>& blendshapeValuesMap);	
-	static TArray<ArmaturePoseMap> InitializeBoneReferences(FPoseContext& Output, float ImportUniformScale);
+	static void InitializeARKitReferences(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeIDs, TArray<float>& blendshapeValuesMap, int ClientNumber);	
+	static TArray<ArmaturePoseMap> InitializeBoneReferences(FPoseContext& Output, float ImportUniformScale, int ClientNumber);
 	static bool ApplyMocapData(::
 		FPoseContext& Output,
 		TArray<ArmaturePoseMap>& armatureToPoseMap,
 		TArray<SmartName::UID_Type>& blendshapeCurveMap,
 		TArray<float>& blendshapeValuesMap,
+		
+		int ClientNumber,
 		
 		bool rnr,
 		float wnr,
@@ -259,17 +280,22 @@ public:
 		bool CanUpdateLengths = true,
 		bool CanUpdateBlendshapes = true
 		);
-	static void ApplyARKitData(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeCurveMap, TArray<float>& blendshapeValuesMap);
+	static void ApplyARKitData(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeCurveMap, TArray<float>& blendshapeValuesMap, int ClientNumber);
 	
-	static void UpdateCurves(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeCurveMap, TArray<float>& blendshapeValuesMap);
+	static void UpdateCurves(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeCurveMap, TArray<float>& blendshapeValuesMap, int ClientNumber);
 
 protected:
+
+	/*For multi-avatar scenes. Set the client number to target a specific clinet in the APSCore APSClient. Default = 0*/
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link)", meta = (ClampMin = "0", ClampMax = "16", UIMin = "0", UIMax = "16"))
+	ClientNumbers ClientNumber = CLIENT_0;
 	
 	/** The IP address to the PC running a APS motion capture server (default localhost = 127.0.0.1) */
 	//UPROPERTY(EditAnywhere, Category = "APS (Live-Link)")
 	FString ipAddr = TEXT("127.0.0.1");
 
 	int ipPort = 10000;    
+
 
 	//bool canSendSocket = false;
 

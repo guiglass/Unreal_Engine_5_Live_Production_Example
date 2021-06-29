@@ -3,7 +3,6 @@
 #pragma once
 
 #include "Animation/AnimNodeBase.h"
-#include "BoneContainer.h"
 #include "APSMocapServerSync.h"
 #include "AnimNode_APSLiveLinkNode.generated.h"
 /*
@@ -30,6 +29,11 @@ struct APSLIVELINK_API FAnimNode_APSLiveLinkNode : public FAnimNode_Base
 
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Settings (APS Live-Link)")
 	//FPoseLink InPose;
+unity
+	//Connect multiple avatars and PCs in a single scene.
+	//select the client from the dropdown to target a client connection in the APSCore - Default = Client_0
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Settings (APS Live-Link)")
+	TEnumAsByte<ClientNumbers> ClientNumber = CLIENT_0;
 	
 	//Apply bone translations for bones that can be stretched.
 	//Some bones can translate as well as rotate, but translation is optional and may not be desired.

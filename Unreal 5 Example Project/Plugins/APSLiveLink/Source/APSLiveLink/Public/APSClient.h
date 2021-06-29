@@ -8,7 +8,8 @@
 #include "APSClient.generated.h"
 
 // The APS motion capture data sync module.
-static UAPSMocapServerSync* APSClient;
+////static UAPSMocapServerSync* APSClientOLD;
+static TArray<UAPSMocapServerSync*> APSClients = {nullptr,nullptr,nullptr,nullptr};
 
 UENUM()
 enum SyncRates
@@ -32,21 +33,78 @@ public:
 	//Getters
 	UFUNCTION(BlueprintCallable, Category = "APS (Live-Link)")
 	TArray<float> GetBlendshapeValues() {
+		auto APSClient = APSClients[0];
+
 		return APSClient->GetBlendshapeValues();
 	}
-	
-	/** The IP address to the PC running a APS motion capture server (default localhost = 127.0.0.1) */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link)")
-	FString IpAddr = TEXT("127.0.0.1");
-	//Note: APS Live-Link Port = 10000
 
-	/** The listening port number on the PC running a APS motion capture server, port number must exactly match listening port on server (default 10000) */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link)")
-	int IpPort = 10000;
+	TArray<FString> IpAddrsArray;
+	TArray<int> IpPortsArray;
+	TArray<SyncRates> SyncRatesArray;
+
+
+	//CLIENT 0
 	
+	/** The destination IP address to the PC running a APS motion capture server (default localhost = 127.0.0.1) */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 0", Meta = (DisplayName = "Ip Addr"))
+	FString IpAddr0 = TEXT("127.0.0.1");
+
+	/** The listening port number on the PC running a APS motion capture server, port number must exactly match listening port on server (default 10000)
+	* Set to -1 to disable this client.*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 0", Meta = (DisplayName = "Ip Port"))
+	int IpPort0 = 10000;
+
 	/** The frequency at which to poll for motion capture data from the APS motion capture server. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link)")
-	TEnumAsByte<SyncRates> SyncRate = FPS_60;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 0", Meta = (DisplayName = "Sync Rate"))
+	TEnumAsByte<SyncRates> SyncRate0 = FPS_60;
+
+	//CLIENT 1
+	
+	/** The destination IP address to the PC running a APS motion capture server (default localhost = 127.0.0.1) */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 1", Meta = (DisplayName = "Ip Addr"))
+	FString IpAddr1 = TEXT("127.0.0.1");
+
+	/** The listening port number on the PC running a APS motion capture server, port number must exactly match listening port on server (default 10000)
+	 * Set to -1 to disable this client.*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 1", Meta = (DisplayName = "Ip Port"))
+	int IpPort1 = -1;
+
+	/** The frequency at which to poll for motion capture data from the APS motion capture server. */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 1", Meta = (DisplayName = "Sync Rate"))
+	TEnumAsByte<SyncRates> SyncRate1 = FPS_60;
+
+	//CLIENT 2
+	
+	/** The destination IP address to the PC running a APS motion capture server (default localhost = 127.0.0.1) */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 2", Meta = (DisplayName = "Ip Addr"))
+	FString IpAddr2 = TEXT("127.0.0.1");
+
+	/** The listening port number on the PC running a APS motion capture server, port number must exactly match listening port on server (default 10000)
+	* Set to -1 to disable this client.*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 2", Meta = (DisplayName = "Ip Port"))
+	int IpPort2 = -1;
+
+	/** The frequency at which to poll for motion capture data from the APS motion capture server. */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 2", Meta = (DisplayName = "Sync Rate"))
+	TEnumAsByte<SyncRates> SyncRate2 = FPS_60;
+
+	//CLIENT 3
+	
+	/** The destination IP address to the PC running a APS motion capture server (default localhost = 127.0.0.1) */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 3", Meta = (DisplayName = "Ip Addr"))
+	FString IpAddr3 = TEXT("127.0.0.1");
+
+	/** The listening port number on the PC running a APS motion capture server, port number must exactly match listening port on server (default 10000)
+	* Set to -1 to disable this client.*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 3", Meta = (DisplayName = "Ip Port"))
+	int IpPort3 = -1;
+
+	/** The frequency at which to poll for motion capture data from the APS motion capture server. */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link) Client 3", Meta = (DisplayName = "Sync Rate"))
+	TEnumAsByte<SyncRates> SyncRate3 = FPS_60;
+
+
+	
 
 	/** The avatar mesh must match the motion capture avatar exactly. Be sure to also set the Skeletal Mesh. */
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "APS (Live-Link)")
@@ -54,16 +112,13 @@ public:
 
 	/** Calling this while connected to motion capture server will update the avatar's pose and blendshapes currently from APS.  */
 	UFUNCTION(BlueprintCallable, Category = "APS (Live-Link)")
-	void SyncAvatarData();
-	void ConnectToServer();
+	void SyncAvatarData(int clientNumber);
+	void ConnectToServer(FString ip, int port, int client);
 
 protected:
-	
-	// The APS motion capture data sync module.
-	//UAPSMocapServerSync* APSClient;
-
+		
 	// Main update timer, since last update
-	float LastSendTime; 
+	//float LastSendTime; 
 	
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -73,5 +128,5 @@ protected:
 	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
+	
 };

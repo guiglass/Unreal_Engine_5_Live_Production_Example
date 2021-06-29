@@ -30,13 +30,17 @@ struct APSLIVELINK_API FAnimNode_APSARKitNode : public FAnimNode_Base
 
 public:
 	FAnimNode_APSARKitNode();
-
+	
+	//Connect multiple avatars and PCs in a single scene.
+	//select the client from the dropdown to target a client connection in the APSCore - Default = Client_0
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Settings (APS Live-Link)")
+	TEnumAsByte<ClientNumbers> ClientNumber = CLIENT_0;
+	
 	// FAnimNode_Base interface
 	virtual void Initialize_AnyThread(const FAnimationInitializeContext& Context) override;
 	virtual void CacheBones_AnyThread(const FAnimationCacheBonesContext& Context) override;
 	virtual void Update_AnyThread(const FAnimationUpdateContext& Context) override;
 	virtual void Evaluate_AnyThread(FPoseContext & Output) override;
 	virtual void GatherDebugData(FNodeDebugData& DebugData) override;
-	//virtual void EvaluateComponentSpace_AnyThread(FComponentSpacePoseContext& Output) override;
 	// End of FAnimNode_Base interface
 };
