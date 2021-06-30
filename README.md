@@ -151,18 +151,6 @@ If the connection was successful you should see the mannequin in Unreal moves ex
   </a>
 </p>
 
-### Connect *Multiple Clients And Avatars* In The Same Scene (optional).
-<p align="center">
-  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/live_link_configs.png">
-     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/live_link_configs.png">
-  </a>
-  <br>
-The <b>APSCore</b> allows connecting up to four simultaneous clients for creating multi-avatar live productions. 
-	<br>
-	<i>Note that by setting any of the <b>Ip Port</b> parameters to -1 will disable that client.</i>
-</p>
-
-
 ### The *Avatar Pose Receiver (APS Live-Link)* Node.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/realtime_retargeting.png">
@@ -190,6 +178,26 @@ The Sidekick facecap app can be used to add facial capture to any .fbx or metahu
   </a>
 </p>
 Sidekick facecap app for IOS download and testflight applicaton can be found <a href="https://www.mocapfusion.com/sidekick-app">here</a>.
+
+### Connect *Multiple Clients And Avatars* In The Same Scene (optional).
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/live_link_configs.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/live_link_configs.png">
+  </a>
+  <br>
+The <b>APSCore</b> allows connecting up to four simultaneous clients for creating multi-avatar live productions. 
+	<br>
+	<i>Note that by setting any of the <b>Ip Port</b> parameters to -1 will disable that client.</i>
+</p>
+
+### Assigning The *Client Number* To The Animation Node.
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/client_number.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/client_number.png">
+  </a>
+  <br>
+The <b>Client Number</b> parameters of the AvatarPoseReceiver allows specifying which client connection to use as the source for motion capture data. The client number corrisponds to the "client" desiginations of the APSCore scene object.
+</p>
 
 
 ### Troubleshooting.
