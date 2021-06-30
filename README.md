@@ -168,7 +168,7 @@ Retargeting can be enabled to fix offsets when using the SK_Man avatar with Meta
 
 Checkbox functions:
  - **Can Update Lengths** - Apply bone translations for bones that can be stretched. Some bones can translate as well as rotate, but translation is optional and may not be desired.
- - **Can Update Blend shapes** - Apply facial expression blendshapes to the mesh. For use with custom .fbx avatars that have facial blendshapes.
+ - **Can Update Blendshapes** - Apply facial expression blendshapes to the mesh. For use with custom .fbx avatars that have facial blendshapes.
  - **Rotation** - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone rotation offsets.
  - **Location** - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone location (stretch) offsets.
 
