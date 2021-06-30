@@ -163,6 +163,12 @@ This animation node should be connected directly to the Output Pose in the anima
 <br><br>
 Note that the <b>AvatarPoseReceiver</b> node also includes a real-time re-targeting feature located in the Details tab. This can be helpful if the mocap avatar in APS and Unreal game character's skeleton are slightly different from each other and can correct offsets after tpose calibration. You may enable and override rotation or translation offsets by using the checkboxes for any of the bone groups: Neck, Spine, Shoulders, Legs, Arms, Hands and Fingers. The Rotation Weight and Location Weight input fields are for setting the amount of retargeting. 
 
+Checkboxe functions:
+ - Can Update Lengths - Apply bone translations for bones that can be stretched. Some bones can translate as well as rotate, but translation is optional and may not be desired.
+ - Can Update Blend shapes - Apply facial expression blendshapes to this mesh. Import Morph Targets" checkbox must be enabled when importing this avatar.
+ - Rotation - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone rotation offsets.
+ - Location - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone location (stretch) offsets.
+
 ### Connect *Multiple Clients And Avatars* In The Same Scene (optional).
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/live_link_configs.png">
