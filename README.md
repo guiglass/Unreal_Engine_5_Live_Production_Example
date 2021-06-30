@@ -165,16 +165,16 @@ Note that the <b>AvatarPoseReceiver</b> node also includes a real-time re-target
 
 Checkbox functions:
  - **Can Update Lengths** - Apply bone translations for bones that can be stretched. Some bones can translate as well as rotate, but translation is optional and may not be desired.
- - **Can Update Blendshapes** - Apply facial expression blendshapes to the mesh. For use with custom .fbx avatars that have facial blendshapes.
- - 
+ - **Can Update Blendshapes** - Apply blendshapes from APS avatar to the UE avatar mesh. For use with .fbx avatars that include blendshapes. *"Import Morph Targets" checkbox must be enabled !!*
+
 #### Retargeting (MetaHuman Rigs)
 Retargeting can be enabled to fix offsets when using the SK_Man avatar with MetaHumans. Because not all proportions are exactly the same for all MetaHumans it may be possible to compensate for difference between rigs by enabling the retargeting checkboxes for certain parts of the avatar. Note that retargeting is not needed if using a .fbx in UE that exactlty matches the .fbx used to create the avatar in APS since they would share exactly the same skeleton and rest pose.
 
 Checkbox functions:
  - **Rotation** - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone rotation offsets.
  - **Location** - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone location (stretch) offsets.
- - **Rotation Weight** - Retargeting rotation offset blend weight. How much to blend rotation retargeting.
- - **Location Weight** - Retargeting location offset blend weight. How much to blend location (stretch) retargeting.
+ - **Rotation Weight** - Retargeting rotation offset blend weight. Amount to blend the rotation retargeting.
+ - **Location Weight** - Retargeting location offset blend weight. Amount to blend the location (stretch) retargeting.
  
 ### Connect *Multiple Clients And Avatars* In The Same Scene (optional).
 <p align="center">
