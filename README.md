@@ -163,22 +163,6 @@ This animation node should be connected directly to the Output Pose in the anima
 <br><br>
 Note that the <b>AvatarPoseReceiver</b> node also includes a real-time re-targeting feature located in the Details tab. This can be helpful if the mocap avatar in APS and Unreal game character's skeleton are slightly different from each other and can correct offsets after tpose calibration. You may enable and override rotation or translation offsets by using the checkboxes for any of the bone groups: Neck, Spine, Shoulders, Legs, Arms, Hands and Fingers. The Rotation Weight and Location Weight input fields are for setting the amount of retargeting. 
 
-### The *Avatar ARKit Receiver (APS Live-Link)* Node.
-<p align="center">
-  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/arkit_receiver.png">
-     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/arkit_receiver.png">
-  </a>
-</p>
-It is now possible to use the APS Sidekick IOS app with your live production avatars! And also works for easily adding APS Sidekick facecap to MetaHumans. The <b>AvatarARKitReceiver</b> node can be added to the Animation Blueprint. This node is optional!
-<br><br>
-The Sidekick facecap app can be used to add facial capture to any .fbx or metahuman that includes facial blendshapes. Avatars there were built using the APS_SDK may have the optional facecal linker component added and may be used to stream facecap data to the live production avatar in UE.
-<p align="center">
-  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Sidekick121.png">
-     <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Sidekick121.png">
-  </a>
-</p>
-Sidekick facecap app for IOS download and testflight applicaton can be found <a href="https://www.mocapfusion.com/sidekick-app">here</a>.
-
 ### Connect *Multiple Clients And Avatars* In The Same Scene (optional).
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/live_link_configs.png">
@@ -199,6 +183,21 @@ The <b>APSCore</b> allows connecting up to four simultaneous clients for creatin
 The <b>Client Number</b> parameters of the AvatarPoseReceiver allows specifying which client connection to use as the source for motion capture data. The client number corrisponds to the "client" desiginations of the APSCore scene object.
 </p>
 
+### The *Avatar ARKit Receiver (APS Live-Link)* Node.
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/arkit_receiver.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/arkit_receiver.png">
+  </a>
+</p>
+It is now possible to use the APS Sidekick IOS app with your live production avatars! And also works for easily adding APS Sidekick facecap to MetaHumans. The <b>AvatarARKitReceiver</b> node can be added to the Animation Blueprint. This node is optional!
+<br><br>
+The Sidekick facecap app can be used to add facial capture to any .fbx or metahuman that includes facial blendshapes. Avatars there were built using the APS_SDK may have the optional facecal linker component added and may be used to stream facecap data to the live production avatar in UE.
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Sidekick121.png">
+     <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Sidekick121.png">
+  </a>
+</p>
+Sidekick facecap app for IOS download and testflight applicaton can be found <a href="https://www.mocapfusion.com/sidekick-app">here</a>.
 
 ### Troubleshooting.
 <p align="center">
