@@ -163,11 +163,14 @@ This animation node should be connected directly to the Output Pose in the anima
 <br><br>
 Note that the <b>AvatarPoseReceiver</b> node also includes a real-time re-targeting feature located in the Details tab. This can be helpful if the mocap avatar in APS and Unreal game character's skeleton are slightly different from each other and can correct offsets after tpose calibration. You may enable and override rotation or translation offsets by using the checkboxes for any of the bone groups: Neck, Spine, Shoulders, Legs, Arms, Hands and Fingers. The Rotation Weight and Location Weight input fields are for setting the amount of retargeting. 
 
+## Retargeting (MetaHuman Rigs)
+Retargeting can be enabled to fix offsets when using the SK_Man avatar with MetaHumans. Because not all proportions are exactly the same for all MetaHumans it may be possible to compensate for difference between rigs by enabling the retargeting checkboxes for certain parts of the avatar. Note that retargeting is not needed if using a .fbx in UE that exactlty matches the .fbx used to create the avatar in APS since they would share exactly the same skeleton and rest pose.
+
 Checkboxe functions:
- - Can Update Lengths - Apply bone translations for bones that can be stretched. Some bones can translate as well as rotate, but translation is optional and may not be desired.
- - Can Update Blend shapes - Apply facial expression blendshapes to this mesh. Import Morph Targets" checkbox must be enabled when importing this avatar.
- - Rotation - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone rotation offsets.
- - Location - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone location (stretch) offsets.
+ - **Can Update Lengths** - Apply bone translations for bones that can be stretched. Some bones can translate as well as rotate, but translation is optional and may not be desired.
+ - **Can Update Blend shapes** - Apply facial expression blendshapes to the mesh. For use with custom .fbx avatars that have facial blendshapes.
+ - **Rotation** - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone rotation offsets.
+ - **Location** - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone location (stretch) offsets.
 
 ### Connect *Multiple Clients And Avatars* In The Same Scene (optional).
 <p align="center">
