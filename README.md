@@ -162,15 +162,17 @@ The <b>AvatarPoseReceiver</b> node is found in the Animation Blueprints for Skel
 This animation node should be connected directly to the Output Pose in the animation blueprint.
 <br><br>
 Note that the <b>AvatarPoseReceiver</b> node also includes a real-time re-targeting feature located in the Details tab. This can be helpful if the mocap avatar in APS and Unreal game character's skeleton are slightly different from each other and can correct offsets after tpose calibration. You may enable and override rotation or translation offsets by using the checkboxes for any of the bone groups: Neck, Spine, Shoulders, Legs, Arms, Hands and Fingers. The Rotation Weight and Location Weight input fields are for setting the amount of retargeting. 
-
-Checkbox functions:
+<br><br>
+Parameter's function:
+ - **Client Number** - Allows specifying which client connection to use as the source for motion capture data. The client number corresponds to the "client" designations of the APSCore scene object (Default = Client_0)
  - **Can Update Lengths** - Apply bone translations for bones that can be stretched. Some bones can translate as well as rotate, but translation is optional and may not be desired.
  - **Can Update Blendshapes** - Apply blendshapes from APS avatar to the UE avatar mesh. For use with .fbx avatars that include blendshapes. *"Import Morph Targets" checkbox must be enabled !!*
+ - **Import Uniform Scale** - This value must match the "Import Uniform Scale" value if it was changed when importing the avatar. Typically this is 1.
 
 #### Retargeting (MetaHuman Rigs)
 Retargeting can be enabled to fix offsets when using the SK_Man avatar with MetaHumans. Because not all proportions are exactly the same for all MetaHumans it may be possible to compensate for difference between rigs by enabling the retargeting checkboxes for certain parts of the avatar. Note that retargeting is not needed if using a .fbx in UE that exactlty matches the .fbx used to create the avatar in APS since they would share exactly the same skeleton and rest pose.
-
-Checkbox functions:
+<br><br>
+Parameter's function:
  - **Rotation** - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone rotation offsets.
  - **Location** - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone location (stretch) offsets.
  - **Rotation Weight** - Retargeting rotation offset blend weight. Amount to blend the rotation retargeting.
@@ -193,7 +195,7 @@ The <b>APSCore</b> allows connecting up to four simultaneous clients for creatin
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/client_number.png">
   </a>
   <br>
-The <b>Client Number</b> parameters of the AvatarPoseReceiver allows specifying which client connection to use as the source for motion capture data. The client number corrisponds to the "client" desiginations of the APSCore scene object.
+The <b>Client Number</b> parameters of the AvatarPoseReceiver allows specifying which client connection to use as the source for motion capture data. The client number corresponds to the "client" designations of the APSCore scene object.
 </p>
 
 ### The *Avatar ARKit Receiver (APS Live-Link)* Node.
