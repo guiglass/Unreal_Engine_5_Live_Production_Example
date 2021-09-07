@@ -254,7 +254,7 @@ After copying the APSLiveLink plugin folder into a new project you will have to 
      <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_plugins.png">
   </a>
 </p>
-Then search for <b>APS Live-Link SDK</b> in the Plugin manager and click the enable checkbox.
+Search for <b>APS Live-Link SDK</b> in the Plugin manager and click the enable checkbox.
 
 <br><br>
 --------
