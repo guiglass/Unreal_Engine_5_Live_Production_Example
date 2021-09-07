@@ -212,7 +212,7 @@ The <b>Client Number</b> parameters of the AvatarPoseReceiver allows specifying 
 </p>
 It is now possible to use the APS Sidekick IOS app with your live production avatars! And also works for easily adding APS Sidekick facecap to MetaHumans. The <b>AvatarARKitReceiver</b> node can be added to the Animation Blueprint. This node is optional!
 <br><br>
-The Sidekick facecap app can be used to add facial capture to any .fbx or metahuman that includes facial blendshapes. Avatars there were built using the APS_SDK may have the optional facecal linker component added and may be used to stream facecap data to the live production avatar in UE.
+The Sidekick facecap app can be used to add facial capture to any .fbx or metahuman that includes facial blendshapes. Avatars that were built using the APS_SDK may have the optional facecal linker component added and may be used to stream facecap data to the live production avatar in UE.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Sidekick121.png">
      <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/Sidekick121.png">
