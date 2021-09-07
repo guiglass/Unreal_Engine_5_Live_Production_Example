@@ -220,32 +220,6 @@ The Sidekick facecap app can be used to add facial capture to any .fbx or metahu
 </p>
 Sidekick facecap app for IOS download and testflight applicaton can be found <a href="https://www.mocapfusion.com/sidekick-app">here</a>.
 
-### Copy The Plugin To A New Project.
-<p align="center">
-  <a href="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/ue5_copy_folder.png">
-     <img width="50%" src="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/ue5_copy_folder.png">
-  </a>
-  <br>
-APS live-link is a standard plugin for UE. The plugin can be copied directly from the example project's Plugins folder and placed into a new or existing project:
-</p>
-
-<p align="center">
-  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_menu.png">
-     <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_menu.png">
-  </a>
-
-</p>
-<br>
-After adding the plugin to the new project locate the Plugins option in the dropdown menu in Unrea Editor:
-<p align="center">
-  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_plugins.png">
-     <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_plugins.png">
-  </a>
-
-</p>
-<br>
-And enable the **APS Live-Link SDK** plugin in the Plugin manager:
-
 ### Troubleshooting.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/config_port.png">
@@ -259,6 +233,29 @@ You can find the log file located in the folder: <b><i>%USERPROFILE%\AppData\Loc
 In some cases it may be desireable to change the listening port from the default 10000. In this case you may locate the <b>\Configs</b> folder located in the APS LUXOR game data folder where the (UE_LIVE_LINK_CONFIG.dat) .JSON file lives which allows users to change some of the (low level) game parameters such as the live-link port number. <i>Changing the port number may resolve connection issues in some cases.</i>
 <br><br>
 You can find the config file located in the folder: <b><i>%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Configs\</i></b>
+
+### How To Copy The Plugin To A New Project.
+<p align="center">
+  <a href="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/ue5_copy_folder.png">
+     <img width="50%" src="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/ue5_copy_folder.png">
+  </a>
+  <br>
+The APS live-link plugin is a standard plugin for UE. The plugin folder can be copied directly from this example project's Plugins folder and placed into a new or existing project. This will copy the APSCore and all blueprint nodes for use in other projects.
+</p>
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_menu.png">
+     <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_menu.png">
+  </a>
+</p>
+After copying the APSLiveLink plugin folder into a new project you will have to enable the plugin. Locate the Plugins menu item in Unrea Editor's Edit dropdown menu and select it to open the plugin manager.
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_plugins.png">
+     <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_plugins.png">
+  </a>
+</p>
+Then search for **APS Live-Link SDK** in the Plugin manager and enable the plugin.
+
 <br><br>
 --------
 <br><br>
