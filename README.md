@@ -234,7 +234,7 @@ In some cases it may be desireable to change the listening port from the default
 <br><br>
 You can find the config file located in the folder: <b><i>%USERPROFILE%\AppData\LocalLow\Animation Prep Studios\LUXOR\Configs\</i></b>
 
-### How To Copy The Plugin To A New Project.
+### Copying The Plugin To A New Project.
 <p align="center">
   <a href="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/ue5_copy_folder.png">
      <img width="50%" src="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/ue5_copy_folder.png">
