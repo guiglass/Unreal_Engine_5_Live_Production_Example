@@ -220,25 +220,29 @@ The Sidekick facecap app can be used to add facial capture to any .fbx or metahu
 </p>
 Sidekick facecap app for IOS download and testflight applicaton can be found <a href="https://www.mocapfusion.com/sidekick-app">here</a>.
 
-### Copying The APS Live-Link Plugin Into A New Or Existing Project.
+### Copy The Plugin To A New Project.
 <p align="center">
   <a href="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/ue5_copy_folder.png">
      <img width="50%" src="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/ue5_copy_folder.png">
   </a>
-</p>
+  <br>
 APS live-link is a standard plugin for UE. The plugin can be copied directly from the example project's Plugins folder and placed into a new or existing project:
-<br><br>
-Once the plugin folder has been added to the new project you can locate it under the Plugins menu in Unrea Editor:
+</p>
+
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_menu.png">
      <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_menu.png">
   </a>
+<br>
+After adding the plugin to the new project locate the Plugins option in the dropdown menu in Unrea Editor:
 </p>
-Then finally enable the **APS Live-Link SDK** plugin in the Plugins manager:
+
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_plugins.png">
      <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_plugins.png">
   </a>
+<br>
+And enable the **APS Live-Link SDK** plugin in the Plugin manager:
 </p>
 
 
