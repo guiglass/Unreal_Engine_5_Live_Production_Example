@@ -245,13 +245,13 @@ The APS live-link plugin is a standard plugin for UE. The plugin folder can be c
 
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_menu.png">
-     <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_menu.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_menu.png">
   </a>
 </p>
 After copying the APSLiveLink plugin folder into a new project you will have to enable the plugin. Locate the Plugins menu item in Unrea Editor's Edit dropdown menu and select it to open the plugin manager.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_plugins.png">
-     <img width="25%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_plugins.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/ue5_plugins.png">
   </a>
 </p>
 Then search for **APS Live-Link SDK** in the Plugin manager and enable the plugin.
