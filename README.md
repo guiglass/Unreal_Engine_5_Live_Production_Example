@@ -6,8 +6,8 @@ The binaries for this plugin were compile using UE5 on Windows 10 64bit <i>but t
 This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.7 or above and Unreal Engiene 5 editor. 
 
 ## Examples:
+[![Youtube Tutorial](https://img.youtube.com/vi/bDVLjqRBl88/0.jpg)](https://www.youtube.com/watch?v=bDVLjqRBl88)
 [![Youtube Tutorial](https://img.youtube.com/vi/yERiOkhqLxc/0.jpg)](https://www.youtube.com/watch?v=yERiOkhqLxc)
-[![Youtube Tutorial](https://img.youtube.com/vi/F8oycNetQKY/0.jpg)](https://www.youtube.com/watch?v=F8oycNetQKY)
 
 ## Installing the necessary software.
 
