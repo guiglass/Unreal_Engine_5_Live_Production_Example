@@ -9,6 +9,8 @@ This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.7 or a
 [![Youtube Tutorial](https://img.youtube.com/vi/bDVLjqRBl88/0.jpg)](https://www.youtube.com/watch?v=bDVLjqRBl88)
 [![Youtube Tutorial](https://img.youtube.com/vi/yERiOkhqLxc/0.jpg)](https://www.youtube.com/watch?v=yERiOkhqLxc)
 
+Download the latest plugin here: https://www.mocapfusion.com/live-link
+
 ## Installing the necessary software.
 
 <p align="center">
