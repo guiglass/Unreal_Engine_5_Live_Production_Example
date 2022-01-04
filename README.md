@@ -5,7 +5,7 @@ The binaries for this plugin were compile using UE5 on Windows 10 64bit <i>but t
 
 This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.7 or above and Unreal Engiene 5 editor. 
 
-Download the latest APS Live-Link plugin (v5.0.7) for UE4 and UE5 here:  here: https://www.mocapfusion.com/live-link
+Download the latest APS Live-Link plugin (v5.0.7) for UE4 and UE5 here: https://www.mocapfusion.com/live-link
 
 ## Examples:
 [![Youtube Tutorial](https://img.youtube.com/vi/bDVLjqRBl88/0.jpg)](https://www.youtube.com/watch?v=bDVLjqRBl88)
