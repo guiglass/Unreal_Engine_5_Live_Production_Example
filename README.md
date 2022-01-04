@@ -1,3 +1,5 @@
+Download the latest plugin here: https://www.mocapfusion.com/live-link
+
 # Unreal Engine 5 plugin for APS (live-link)
 This is a complete example project for UE5 that shows how to use a custom APS Luxor avatars with live-link full body tracking and facial capture on characters in Unreal Engine. This plugin can be used in live production environments or to simply record a animation directly in Unreal Editor.
 
@@ -7,9 +9,7 @@ This project requires APS Luxor (https://www.patreon.com/prepstudio) v3.6.7 or a
 
 ## Examples:
 [![Youtube Tutorial](https://img.youtube.com/vi/bDVLjqRBl88/0.jpg)](https://www.youtube.com/watch?v=bDVLjqRBl88)
-[![Youtube Tutorial](https://img.youtube.com/vi/yERiOkhqLxc/0.jpg)](https://www.youtube.com/watch?v=yERiOkhqLxc)
-
-Download the latest plugin here: https://www.mocapfusion.com/live-link
+[![Youtube Tutorial](https://img.youtube.com/vi/yERiOkhqLxc/0.jpg)](https://www.youtube.com/watch?v=yERiOkhqLxc
 
 ## Installing the necessary software.
 
