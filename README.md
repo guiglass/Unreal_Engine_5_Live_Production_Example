@@ -185,7 +185,17 @@ Parameters:
  - **Location** - Use Retargeting to correct Neck, Spine, Clavicle, Leg, Arm, Hand and Finger bone location (stretch) offsets.
  - **Rotation Weight** - Retargeting rotation offset blend weight. Amount to blend the rotation retargeting.
  - **Location Weight** - Retargeting location offset blend weight. Amount to blend the location (stretch) retargeting.
- 
+
+### Creating the Animation Blueprint.
+<p align="center">
+  <a href="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/create_anim_blueprint.gif">
+     <img width="50%" src="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/create_anim_blueprint.gif">
+  </a>
+</p>
+Select the skeletal mesh for your avatar and right click, then create a new Animation Blueprint.
+<br><br>
+You should then see a new Animation Blueprint that was just created. Simply double click on it to open the AnimGraph where you may add the Avatar Pose Receiver node and connect it to the Output Pose.
+
 ### Connect *Multiple Clients And Avatars* In The Same Scene (optional).
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/live_link_configs.png">
@@ -205,16 +215,6 @@ The <b>APSCore</b> allows connecting up to four simultaneous clients for creatin
   <br>
 The <b>Client Number</b> parameters of the AvatarPoseReceiver allows specifying which client connection to use as the source for motion capture data. The client number corresponds to the "client" designations of the APSCore scene object.
 </p>
-
-### Creating the Animation Blueprint.
-<p align="center">
-  <a href="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/create_anim_blueprint.gif">
-     <img width="50%" src="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/create_anim_blueprint.gif">
-  </a>
-</p>
-Select the skeletal mesh for your avatar and right click, then create a new Animation Blueprint.
-<br><br>
-You should then see a new Animation Blueprint that was just created. Simply double click on it to open the AnimGraph where you may add the Avatar Pose Receiver node and connect it to the Output Pose.
 
 ### The *Avatar ARKit Receiver (APS Live-Link)* Node.
 <p align="center">
