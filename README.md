@@ -157,6 +157,10 @@ If the connection was successful you should see the mannequin in Unreal moves ex
   </a>
 </p>
 
+<p align="center">
+<h1>Animation Blueprint Setup</h1>
+</p>
+
 ### How to create the *Animation Blueprint*.
 <p align="center">
   <a href="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/create_anim_blueprint.gif">
@@ -216,6 +220,11 @@ The <b>APSCore</b> allows connecting up to four simultaneous clients for creatin
   <br>
 The <b>Client Number</b> parameters of the AvatarPoseReceiver allows specifying which client connection to use as the source for motion capture data. The client number corresponds to the "client" designations of the APSCore scene object.
 </p>
+
+<p align="center">
+<h1>Facecap Setup (Sidekick app)</h1>
+</p>
+
 
 ### The *Avatar ARKit Receiver (APS Live-Link)* Node.
 <p align="center">
