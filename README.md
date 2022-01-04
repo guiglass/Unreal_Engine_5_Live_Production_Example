@@ -157,6 +157,16 @@ If the connection was successful you should see the mannequin in Unreal moves ex
   </a>
 </p>
 
+### How to create the *Animation Blueprint*.
+<p align="center">
+  <a href="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/create_anim_blueprint.gif">
+     <img width="50%" src="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/create_anim_blueprint.gif">
+  </a>
+</p>
+Select the skeletal mesh for your avatar and right click, then create a new Animation Blueprint.
+<br><br>
+You should then see a new Animation Blueprint that was just created. Simply double click on it to open the AnimGraph where you may add the Avatar Pose Receiver node and connect it to the Output Pose.
+
 ### The *Avatar Pose Receiver (APS Live-Link)* Node.
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/realtime_retargeting.png">
@@ -186,15 +196,6 @@ Parameters:
  - **Rotation Weight** - Retargeting rotation offset blend weight. Amount to blend the rotation retargeting.
  - **Location Weight** - Retargeting location offset blend weight. Amount to blend the location (stretch) retargeting.
 
-### Creating the Animation Blueprint.
-<p align="center">
-  <a href="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/create_anim_blueprint.gif">
-     <img width="50%" src="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/create_anim_blueprint.gif">
-  </a>
-</p>
-Select the skeletal mesh for your avatar and right click, then create a new Animation Blueprint.
-<br><br>
-You should then see a new Animation Blueprint that was just created. Simply double click on it to open the AnimGraph where you may add the Avatar Pose Receiver node and connect it to the Output Pose.
 
 ### Connect *Multiple Clients And Avatars* In The Same Scene (optional).
 <p align="center">
