@@ -163,9 +163,9 @@ If the connection was successful you should see the mannequin in Unreal moves ex
      <img width="50%" src="https://github.com/guiglass/LUXOR/blob/gh-pages/img/ue5_plugin/create_anim_blueprint.gif">
   </a>
 </p>
-Select the skeletal mesh for your avatar and right click, then create a new Animation Blueprint.
-<br><br>
-You should then see a new Animation Blueprint that was just created. Simply double click on it to open the AnimGraph where you may add the Avatar Pose Receiver node and connect it to the Output Pose.
+Select the SkeletalMesh of your avatar and right click on it, then click on Create > Animation Blueprint.
+<br>
+You should see a new Animation Blueprint. Simply double click on it to open the AnimGraph. Once in the AnimGraph add the Avatar Pose Receiver node and connect it to the Output Pose node, save and compile.
 
 ### The *Avatar Pose Receiver (APS Live-Link)* Node.
 <p align="center">
