@@ -7,7 +7,9 @@ public class APSLiveLink : ModuleRules
     public APSLiveLink(ReadOnlyTargetRules Target) : base(Target)
     {
 	    bUsePrecompiled = true;
-	    
+		
+	    PrecompileForTargets = PrecompileTargetsType.Any;
+		
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
    //     PublicIncludePaths.AddRange(
@@ -36,19 +38,16 @@ public class APSLiveLink : ModuleRules
             "JsonUtilities",
             "CoreUObject",
             "Engine",
-            "AnimGraph", 
-            "AnimGraphRuntime", 
-            "BlueprintGraph"
-            /*"APSCore"*/
+	        //"AnimGraph", 
+	        "AnimGraphRuntime", 
+	        //"BlueprintGraph"
 			// ... add other public dependencies that you statically link with here ...
 		});
 
 
         PrivateDependencyModuleNames.AddRange(new string[]
         {
-	        "AnimGraph", 
-	        "AnimGraphRuntime", 
-	        "BlueprintGraph"
+			// ... add other private dependencies that you statically link with here ...
         });
 
 

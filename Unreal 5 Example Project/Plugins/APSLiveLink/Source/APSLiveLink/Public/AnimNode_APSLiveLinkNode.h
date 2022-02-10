@@ -1,4 +1,4 @@
-// Copyright 2021 Animation Prep Studios. All Rights Reserved.
+// Copyright 2021 Animation Prep Studios - all rights reserved.
 
 #pragma once
 
@@ -21,17 +21,16 @@ struct APSLIVELINK_API FAnimNode_APSLiveLinkNode : public FAnimNode_Base
 	// The APS motion capture data sync custom animation node.
 	GENERATED_BODY()
 
-	TArray<ArmaturePoseMap> armatureToPoseMap;
+	TArray<ArmaturePoseMap> armatureToPoseMap = TArray<ArmaturePoseMap>();
 	TArray<SmartName::UID_Type> blendshapeCurveMap;
 	TArray<float> blendshapeValuesMap;
 
 	FPoseLink BasePose;
 
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Settings (APS Live-Link)")
-	//FPoseLink InPose;
-unity
+	USkeletalMesh *SkeletalMesh;
+	
 	//Connect multiple avatars and PCs in a single scene.
-	//select the client from the dropdown to target a client connection in the APSCore - Default = Client_0
+	//Allows specifying which client connection to use as the source for motion capture data. The client number corresponds to the "client" designations of the APSCore scene object (Default = Client_0)
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Settings (APS Live-Link)")
 	TEnumAsByte<ClientNumbers> ClientNumber = CLIENT_0;
 	
@@ -40,17 +39,16 @@ unity
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Settings (APS Live-Link)")
 	bool CanUpdateLengths = true;
 
-	//Apply facial expression blendshapes to this mesh.
-	//"Import Morph Targets" checkbox must be enabled when importing this avatar.
+	//Apply blendshapes from APS avatar to the UE avatar mesh. For use with .fbx avatars that include blendshapes.
+	//"Import Morph Targets" checkbox must be enabled when importing this avatar .fbx.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Settings (APS Live-Link)")
 	bool CanUpdateBlendshapes = false;
 
-	//This value must match the "Import Uniform Scale" value as found in the "Import Settings" under Mesh tab. This is very important!
-	//If avatar appears stretched then please ensure the value is set exactly as was set in "Import Uniform Scale" when importing the avatar.
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Settings (APS Live-Link)")
-	float ImportUniformScale = 1.0;
+	//If the root scale of the armature is not 1,1,1 it can sometimes cause avatar size in scene to appear incorrect.
+	//If avatar scaling appears wrong please try enabling this toggle and compile/save the blueprint.
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Scale Fix (APS Live-Link)")
+	bool ApplyRootScale = false;
 
-	
 	//Use Retargeting to correct Neck and Head bones rotation offsets.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Retargeting (Neck)", meta=(DisplayName = "Rotation"))
 	bool rnr = false;
@@ -81,10 +79,10 @@ unity
 	float wsl = 1.0;
 	
 		
-	//Use Retargeting to correct Spine bones rotation offsets.
+	//Use Retargeting to correct Calvicle bones rotation offsets.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Retargeting (Shoulders)", meta=(DisplayName = "Rotation"))
 	bool rcr = false;
-	//Use Retargeting to correct Spine bones location offsets.
+	//Use Retargeting to correct Calvicle bones location offsets.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Retargeting (Shoulders)", meta=(DisplayName = "Location"))
 	bool rcl = false;
 	

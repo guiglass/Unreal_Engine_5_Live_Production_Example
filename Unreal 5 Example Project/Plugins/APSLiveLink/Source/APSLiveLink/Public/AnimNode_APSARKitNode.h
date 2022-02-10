@@ -1,4 +1,4 @@
-// Copyright 2021 Animation Prep Studios. All Rights Reserved.
+// Copyright 2021 Animation Prep Studios - all rights reserved.
 
 #pragma once
 

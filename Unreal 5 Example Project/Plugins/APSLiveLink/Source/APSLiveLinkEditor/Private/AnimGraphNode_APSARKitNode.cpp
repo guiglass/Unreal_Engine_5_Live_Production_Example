@@ -1,4 +1,4 @@
-// Copyright 2018 Sean Chen. All Rights Reserved.
+// Copyright 2021 Animation Prep Studios - all rights reserved.
 
 #include "AnimGraphNode_APSARKitNode.h"
 #include "APSLiveLinkEditor.h"
@@ -31,4 +31,3 @@ FString UAnimGraphNode_APSARKitNode::GetNodeCategory() const
 }
 
 #undef LOCTEXT_NAMESPACE
-

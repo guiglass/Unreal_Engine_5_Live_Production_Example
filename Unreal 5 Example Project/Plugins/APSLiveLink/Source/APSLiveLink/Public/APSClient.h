@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2021 Animation Prep Studios - all rights reserved.
 
 #pragma once
 
@@ -41,7 +41,6 @@ public:
 	TArray<FString> IpAddrsArray;
 	TArray<int> IpPortsArray;
 	TArray<SyncRates> SyncRatesArray;
-
 
 	//CLIENT 0
 	

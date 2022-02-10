@@ -1,21 +1,22 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "3.6.1",
+	"VersionName": "5.0.7",
 	"FriendlyName": "APS Live-Link SDK",
 	"Description": "APS SDK Realtime Avatar Client Plugin (beta)",
-	"Category": "Live Production Motion Capture",
+	"Category": "Live Link Production Motion Capture",
 	"CreatedBy": "Animation Prep Studios",
 	"CreatedByURL": "https://www.patreon.com/prepstudio",
-	"DocsURL": "",
-	"MarketplaceURL": "",
-	"SupportURL": "",
+	"DocsURL": "https://github.com/guiglass/Unreal_Engine_5_Live_Production_Example/blob/main/README.md",
+	"MarketplaceURL": "https://www.mocapfusion.com/live-link",
+	"SupportURL": "https://discord.com/invite/ErZcKaQ",
+	"EngineVersion": "5.0.0",
 	"CanContainContent": true,
 	"Installed": true,
 	"Modules": [
 		{
 			"Name": "APSLiveLink",
-			"Type": "UncookedOnly",
+			"Type": "Runtime",
 			"LoadingPhase": "PreDefault",
 			"WhitelistPlatforms": [
 				"Win64"

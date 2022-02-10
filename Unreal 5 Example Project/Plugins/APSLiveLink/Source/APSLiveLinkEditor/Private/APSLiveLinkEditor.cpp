@@ -1,4 +1,4 @@
-// Copyright 2018 Sean Chen. All Rights Reserved.
+// Copyright 2021 Animation Prep Studios - all rights reserved.
 
 #include "APSLiveLinkEditor.h"
 

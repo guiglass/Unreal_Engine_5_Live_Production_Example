@@ -1,4 +1,4 @@
-//Copyright Animation Prep Studios 2021 - all rights reserved.
+// Copyright 2021 Animation Prep Studios - all rights reserved.
 
 #pragma once
 
@@ -6,16 +6,20 @@
 
 #include <queue>
 
-#include "Networking.h"
+
 #include "Animation/AnimNodeBase.h"
 #include "Http.h"
+#include "Sockets.h"
+
 #include "APSMocapServerSync.generated.h"
 
 
 class UAPSMocapServerSync;
 // The APS motion capture data sync module.
 ////static UAPSMocapServerSync* APSData;
-
+//static float armatureBaseScale = 8.548534;
+	
+	
 UENUM()
 enum ClientNumbers
 {
@@ -23,6 +27,26 @@ enum ClientNumbers
 	CLIENT_1 = 1  UMETA(DisplayName = "Client 1"),
 	CLIENT_2 = 2  UMETA(DisplayName = "Client 2"),
 	CLIENT_3 = 3  UMETA(DisplayName = "Client 3"),
+};
+
+UENUM()
+enum TrackerNumbers
+{
+	TRACKER_0 = 0  UMETA(DisplayName = "Tracker 0"),
+	TRACKER_1 = 1  UMETA(DisplayName = "Tracker 1"),
+	TRACKER_2 = 2  UMETA(DisplayName = "Tracker 2"),
+	TRACKER_3 = 3  UMETA(DisplayName = "Tracker 3"),
+	TRACKER_4 = 4  UMETA(DisplayName = "Tracker 4"),
+	TRACKER_5 = 5  UMETA(DisplayName = "Tracker 5"),
+	TRACKER_6 = 6  UMETA(DisplayName = "Tracker 6"),
+	TRACKER_7 = 7  UMETA(DisplayName = "Tracker 7"),
+	TRACKER_8 = 8  UMETA(DisplayName = "Tracker 8"),
+	TRACKER_9 = 9  UMETA(DisplayName = "Tracker 9"),
+	TRACKER_10 = 10  UMETA(DisplayName = "Tracker 10"),
+	TRACKER_11 = 11  UMETA(DisplayName = "Tracker 11"),
+	TRACKER_12 = 12  UMETA(DisplayName = "Tracker 12"),
+	TRACKER_13 = 13  UMETA(DisplayName = "Tracker 13"),
+	TRACKER_14 = 14  UMETA(DisplayName = "Tracker 14"),
 };
 
 UENUM()
@@ -97,11 +121,17 @@ struct FAvatarData
 	UPROPERTY()
 	float hip_scale = 1;
 
+	UPROPERTY()
+	FQuat hip_local_rot = FQuat(0,0,0,1); //the rotation of any parent bone (root bone)
+
+	UPROPERTY()
+	FVector armatureBaseScale = FVector(1,1,1); //this is the scale of the .fbx base transform (the skeletal mesh armature very first transform's sale), //ADDED 5.0.6 
+	
 	//UPROPERTY()
 	//UAnimInstance* aInstance; //the animations instance for setting the blendshapes
 	
 	UPROPERTY()
-	int32  blendshapes; //JSON Var
+	int32  blendshapes; //JSON Var (blendshapeCount)
 
 	UPROPERTY()
 	TArray<FName> blendshapeNames; //JSON Var
@@ -122,13 +152,15 @@ struct FAvatarData
 	int scaleStartIdx = -1;
 	
 	UPROPERTY()
-	int blendshapStartIdx = -1;	
+	int blendshapeStartIdx = -1;	
 };
 
 struct QueueItem
 {
 	int size = -1; //the length of the floatData array
 	float* floatData; //the socket data from APS converted to floats array
+	uint8 controlByte0; //the virtual trackers active indexes control byte
+	uint8 controlByte1; //the virtual trackers active indexes control byte
 };
 
 //map from APS armature indexes to Unreal reference pose indexes
@@ -146,16 +178,11 @@ class APSLIVELINK_API UAPSMocapServerSync : public UActorComponent
 	GENERATED_BODY()
 
 public:
+
 	UAPSMocapServerSync(const FObjectInitializer& ObjectInitializer);
 	
 	// Call this to create the thread and start it going
-	//void StartProcess();
 	
-	// Getters
-	FString getVersion() {
-		return "1.0.2";
-	}
-
 	bool isConnected() {
 		return canSendSocket;
 	}
@@ -189,8 +216,7 @@ public:
 		TArray<ArmaturePoseMap>& armatureToPoseMap,
 		TArray<SmartName::UID_Type>& blendshapeCurveMap,
 		TArray<float>& blendshapeValuesMap,
-		
-		float ImportUniformScale,
+
 		bool CanUpdateLengths,
 		bool CanUpdateBlendshapes,
 
@@ -232,54 +258,63 @@ public:
 		float wfl
 		);
 	static void InitializeARKitReferences(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeIDs, TArray<float>& blendshapeValuesMap, int ClientNumber);	
-	static TArray<ArmaturePoseMap> InitializeBoneReferences(FPoseContext& Output, float ImportUniformScale, int ClientNumber);
+	static TArray<ArmaturePoseMap> InitializeBoneReferences(FPoseContext& Output, int ClientNumber, USkeletalMesh *SkeletalMesh);
+
 	static bool ApplyMocapData(::
-		FPoseContext& Output,
-		TArray<ArmaturePoseMap>& armatureToPoseMap,
-		TArray<SmartName::UID_Type>& blendshapeCurveMap,
-		TArray<float>& blendshapeValuesMap,
+	                           FPoseContext& Output,
+	                           TArray<ArmaturePoseMap>& armatureToPoseMap,
+	                           TArray<SmartName::UID_Type>& blendshapeCurveMap,
+	                           TArray<float>& blendshapeValuesMap,
+
+	                           USkeletalMesh *MyMesh,
+	                           int ClientNumber,
 		
-		int ClientNumber,
-		
-		bool rnr,
-		float wnr,
-		bool rnl,
-		float wnl,
+	                           bool rnr,
+	                           float wnr,
+	                           bool rnl,
+	                           float wnl,
 	 	
-		bool rsr,
-		float wsr,
-		bool rsl,
-		float wsl,
+	                           bool rsr,
+	                           float wsr,
+	                           bool rsl,
+	                           float wsl,
 
-		bool rcr,
-		float wcr,
-		bool rcl,
-		float wcl,
+	                           bool rcr,
+	                           float wcr,
+	                           bool rcl,
+	                           float wcl,
 		
-		bool rar,
-		float war,
-		bool ral,
-		float wal,
+	                           bool rar,
+	                           float war,
+	                           bool ral,
+	                           float wal,
 	
-		bool rlr,
-		float wlr,
-		bool rll,
-		float wll,
+	                           bool rlr,
+	                           float wlr,
+	                           bool rll,
+	                           float wll,
 	
-		bool rhr,
-		float whr,
-		bool rhl,
-		float whl,
+	                           bool rhr,
+	                           float whr,
+	                           bool rhl,
+	                           float whl,
 
-		bool rfr,
-		float wfr,
-		bool rfl,
-		float wfl,
-		
-		float ImportUniformScale = 1.0,
-		bool CanUpdateLengths = true,
-		bool CanUpdateBlendshapes = true
-		);
+	                           bool rfr,
+	                           float wfr,
+	                           bool rfl,
+	                           float wfl,
+
+	                           bool CanUpdateLengths = true,
+	                           bool CanUpdateBlendshapes = true,
+	                           bool ApplyArmatureBaseScale = false
+	);
+
+	static void UpdateTrackedObjectLocal(FTransform *transform, int *iOffset, QueueItem buffer, float scale);
+	
+	static bool GetTrackerObjectData(FTransform &transform, int ClientNumber, int TrackerNumber);
+	
+	static void GetTrackerIndexOffset(int *iOffset, int TrackerNumber, int controlByte0, int controlByte1);
+	
 	static void ApplyARKitData(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeCurveMap, TArray<float>& blendshapeValuesMap, int ClientNumber);
 	
 	static void UpdateCurves(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeCurveMap, TArray<float>& blendshapeValuesMap, int ClientNumber);
@@ -294,10 +329,7 @@ protected:
 	//UPROPERTY(EditAnywhere, Category = "APS (Live-Link)")
 	FString ipAddr = TEXT("127.0.0.1");
 
-	int ipPort = 10000;    
-
-
-	//bool canSendSocket = false;
+	int32 ipPort = 10000;    
 
 	FSocket* Socket;
 	TArray<float>* floatsArray;
