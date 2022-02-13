@@ -9,7 +9,7 @@ Download the latest APS Live-Link plugin (v5.0.7) for UE4 and UE5 here: https://
 
 ## Examples:
 [![Youtube Tutorial](https://img.youtube.com/vi/bDVLjqRBl88/0.jpg)](https://www.youtube.com/watch?v=bDVLjqRBl88)
-[![Youtube Tutorial](https://img.youtube.com/vi/yERiOkhqLxc/0.jpg)](https://www.youtube.com/watch?v=yERiOkhqLxc
+[![Youtube Tutorial](https://img.youtube.com/vi/yERiOkhqLxc/0.jpg)](https://www.youtube.com/watch?v=yERiOkhqLxc)
 
 ## Installing the necessary software.
 
