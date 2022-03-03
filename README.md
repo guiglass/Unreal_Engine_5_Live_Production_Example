@@ -201,7 +201,7 @@ Parameters:
 </p>
 This option is only required for <i>some</i> avatars and in most cases can be left blank.
 <br><br>
-For some avatars Unreal Editor will omit parts of the morph target names, for example in the image below you can see Unreal (left) has removed <b>"Genesis8_1Female_"</b> from all of the morp names, however looking at the same model in Blender (right) reveals the full name of each blendshape:
+For some avatars Unreal Editor will omit parts of the morph target names, for example in the image below you can see that Unreal editor (left) has removed <b>"Genesis8_1Female_"</b> from all of the morph target names, however looking at the same model in Blender (right) reveals the full name of each blendshape:
 <br>
 <p align="center">
   <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/GenesisUnrealBlender.png">
