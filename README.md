@@ -189,7 +189,7 @@ Parameters:
  - **Can Update Lengths** - Apply bone translations for bones that can be stretched. Some bones can translate as well as rotate, but translation is optional and may not be desired.
  - **Can Update Blendshapes** - Apply blendshapes from APS avatar to the UE avatar mesh. For use with .fbx avatars that include blendshapes. *"Import Morph Targets" checkbox must be enabled !!*
  - **Blendshape Names Truncated Substring** - Optional!! UE sometimes removes common substrings from the blendshape names, eg. "Genesis8_1Female_" *Note: You may leave this field blank for most avatars.*
- - **Scale Fix** - If the root scale of the armature is not 1,1,1 it can sometimes cause avatar size in scene to appear incorrect. *If avatar scaling appears wrong please try enabling this toggle.*
+ - **Apply Root Scale** - If the root scale of the armature is not 1,1,1 it can sometimes cause avatar size in scene to appear incorrect. *If avatar scaling appears wrong please try enabling this toggle.*
 
 
 #### Blendshape Names Truncated Substring:
