@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "5.0.7",
+	"VersionName": "5.2.7",
 	"FriendlyName": "APS Live-Link SDK",
 	"Description": "APS SDK Realtime Avatar Client Plugin (beta)",
 	"Category": "Live Link Production Motion Capture",

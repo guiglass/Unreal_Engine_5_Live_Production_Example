@@ -44,8 +44,14 @@ struct APSLIVELINK_API FAnimNode_APSLiveLinkNode : public FAnimNode_Base
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Settings (APS Live-Link)")
 	bool CanUpdateBlendshapes = false;
 
+	//Optional!! UE sometimes removes common substrings from the blendshape names, eg. "Genesis8_1Female_"
+	//If morph target names in UE don't match the fbx shapekey names exactly, try entering the missing string that UE has removed.
+	//Note: You may leave this field blank for most avatars.
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Settings (APS Live-Link)", meta=(EditCondition="CanUpdateBlendshapes", EditConditionHides))
+	FString BlendshapeNamesTruncatedSubstring = "";
+	
 	//If the root scale of the armature is not 1,1,1 it can sometimes cause avatar size in scene to appear incorrect.
-	//If avatar scaling appears wrong please try enabling this toggle and compile/save the blueprint.
+	//If avatar scaling appears wrong please try enabling this toggle.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Scale Fix (APS Live-Link)")
 	bool ApplyRootScale = false;
 

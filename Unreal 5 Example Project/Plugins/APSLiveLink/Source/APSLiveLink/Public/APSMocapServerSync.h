@@ -219,7 +219,7 @@ public:
 
 		bool CanUpdateLengths,
 		bool CanUpdateBlendshapes,
-
+		FString BlendshapeNamesTruncatedSubstring,
 		int ClientNumber,
 		
 		bool rnr,
@@ -257,7 +257,7 @@ public:
 		bool rfl,
 		float wfl
 		);
-	static void InitializeARKitReferences(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeIDs, TArray<float>& blendshapeValuesMap, int ClientNumber);	
+	static void InitializeARKitReferences(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeIDs, TArray<float>& blendshapeValuesMap, int ClientNumber, FString BlendshapeNamesTruncatedSubstring);	
 	static TArray<ArmaturePoseMap> InitializeBoneReferences(FPoseContext& Output, int ClientNumber, USkeletalMesh *SkeletalMesh);
 
 	static bool ApplyMocapData(::
@@ -306,6 +306,7 @@ public:
 
 	                           bool CanUpdateLengths = true,
 	                           bool CanUpdateBlendshapes = true,
+	                           FString BlendshapeNamesTruncatedSubstring = "",
 	                           bool ApplyArmatureBaseScale = false
 	);
 
@@ -317,7 +318,7 @@ public:
 	
 	static void ApplyARKitData(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeCurveMap, TArray<float>& blendshapeValuesMap, int ClientNumber);
 	
-	static void UpdateCurves(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeCurveMap, TArray<float>& blendshapeValuesMap, int ClientNumber);
+	static void UpdateCurves(FPoseContext& Output, TArray<SmartName::UID_Type>& blendshapeCurveMap, TArray<float>& blendshapeValuesMap, int ClientNumber, FString BlendshapeNamesTruncatedSubstring);
 
 protected:
 
