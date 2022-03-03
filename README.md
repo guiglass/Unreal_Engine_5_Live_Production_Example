@@ -173,8 +173,8 @@ You should see a new Animation Blueprint. Simply double click on it to open the 
 
 ### The *Avatar Pose Receiver (APS Live-Link)* Node.
 <p align="center">
-  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/realtime_retargeting.png">
-     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/realtime_retargeting.png">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/pose_receiver_node.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/pose_receiver_node.png">
   </a>
 </p>
 The <b>AvatarPoseReceiver</b> node is found in the Animation Blueprints for SkeletalMeshes. 
@@ -188,7 +188,28 @@ Parameters:
  - **Client Number** - Allows specifying which client connection to use as the source for motion capture data. The client number corresponds to the "client" designations of the APSCore scene object (Default = Client_0).
  - **Can Update Lengths** - Apply bone translations for bones that can be stretched. Some bones can translate as well as rotate, but translation is optional and may not be desired.
  - **Can Update Blendshapes** - Apply blendshapes from APS avatar to the UE avatar mesh. For use with .fbx avatars that include blendshapes. *"Import Morph Targets" checkbox must be enabled !!*
- - **Import Uniform Scale** - This value must match the "Import Uniform Scale" value if it was changed when importing the avatar. Typically this is 1.
+ - **Blendshape Names Truncated Substring** - Optional!! UE sometimes removes common substrings from the blendshape names, eg. "Genesis8_1Female_" *Note: You may leave this field blank for most avatars.*
+ - **Scale Fix** - If the root scale of the armature is not 1,1,1 it can sometimes cause avatar size in scene to appear incorrect. *If avatar scaling appears wrong please try enabling this toggle.*
+
+
+#### Blendshape Names Truncated Substring:
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/TruncatedName.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/TruncatedName.png">
+  </a>
+</p>
+This option is only required for <i>some</i> avatars and in most cases can be left blank.
+<br><br>
+For some avatars Unreal Editor will omit parts of the morph target names, for example in the image below you can see Unreal (left) has removed <b>"Genesis8_1Female_"</b> from all of the morp names, however looking at the same model in Blender (right) reveals the full name of each blendshape:
+<br>
+<p align="center">
+  <a href="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/GenesisUnrealBlender.png">
+     <img width="50%" src="https://raw.githubusercontent.com/guiglass/LUXOR/gh-pages/img/ue5_plugin/GenesisUnrealBlender.png">
+  </a>
+</p>
+Note that in Unreal Editor the <b>"Genesis8_1Female_"</b> substring has been removed from each morph target. However for APS live-link to properly sync facecap blendshapes the two names must match exactly! So to reconcile the difference it is now possible to add the missing part of the name back to restore proper mapping between the two avatars. If your avatar has standardized blendshape names or if they are very long names it may be nescessary to determine if Unreal Editor is truncating the names!!
+<br><br>
 
 #### Retargeting (MetaHuman Rigs)
 Retargeting can be enabled to fix offsets when using the SK_Man avatar with MetaHumans. Because not all proportions are exactly the same for all MetaHumans it may be possible to compensate for difference between rigs by enabling the retargeting checkboxes for certain parts of the avatar. Note that retargeting is not needed if using a .fbx in UE that exactlty matches the .fbx used to create the avatar in APS since they would share exactly the same skeleton and rest pose.
